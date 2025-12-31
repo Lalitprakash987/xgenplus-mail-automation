@@ -1,0 +1,68 @@
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-12-31 15:41:33] INFO  Utils:112 - [TestNG] Running:
+  C:\Users\HP\AppData\Local\Temp\testng-eclipse-1494513898\testng-customsuite.xml
+
+[2025-12-31 15:41:33] INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[2025-12-31 15:41:35] INFO  WebDriverManager:1268 - Using chromedriver 143.0.7499.169 (resolved driver for Chrome 143)
+[2025-12-31 15:41:35] INFO  WebDriverManager:1331 - Exporting webdriver.chrome.driver as C:\Users\HP\.cache\selenium\chromedriver\win64\143.0.7499.169\chromedriver.exe
+[2025-12-31 15:41:37] INFO  LoginTest:16 - Starting validLoginTest
+[2025-12-31 15:41:37] INFO  LoginTest:20 - Switching to top frame
+[2025-12-31 15:41:37] INFO  LoginTest:23 - Entering email: mukest@gmail.com
+[2025-12-31 15:41:37] INFO  LoginTest:26 - Login test completed successfully
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.reporters.jq.Main@272ce069: 44 ms
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.reporters.FailedReporter@3a37a501: 1 ms
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.reporters.XMLReporter@1f346ad2: 6 ms
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3b920bdc: 6 ms
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@6edf29c1: 6 ms
+[2025-12-31 15:41:37] INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@79a04e5f: 0 ms
+[2025-12-31 15:46:27] INFO  WebDriverManager:1268 - Using chromedriver 143.0.7499.169 (resolved driver for Chrome 143)
+[2025-12-31 15:46:27] INFO  WebDriverManager:1331 - Exporting webdriver.chrome.driver as C:\Users\HP\.cache\selenium\chromedriver\win64\143.0.7499.169\chromedriver.exe
+[2025-12-31 15:46:30] INFO  LoginTest:16 - Starting validLoginTest
+[2025-12-31 15:46:30] INFO  LoginTest:20 - Switching to top frame
+[2025-12-31 15:46:30] INFO  LoginTest:23 - Entering email: mukest@gmail.com
+[2025-12-31 15:46:30] INFO  LoginTest:26 - Login test completed successfully
+[2025-12-31 15:49:16] INFO  LoginTest:16 - Starting validLoginTest
+[2025-12-31 15:49:16] INFO  LoginTest:20 - Switching to top frame
+[2025-12-31 15:49:16] INFO  LoginTest:23 - Entering email: mukest@gmail.com
+[2025-12-31 15:49:16] INFO  LoginTest:26 - Login test completed successfully
+[2025-12-31 15:55:38] INFO  LoginTest:16 - Starting validLoginTest
+[2025-12-31 15:55:38] INFO  LoginTest:20 - Switching to top frame
+[2025-12-31 15:55:38] INFO  LoginTest:23 - Entering email: mukest@gmail.com
+[2025-12-31 15:55:38] INFO  LoginTest:26 - Login test completed successfully
+[2025-12-31 15:58:18] INFO  LoginTest:19 - Starting validLoginTest
+[2025-12-31 15:58:18] INFO  LoginTest:24 - Switching to top frame
+[2025-12-31 15:58:18] INFO  LoginTest:28 - Entering email: mukest@gmail.com
+[2025-12-31 15:58:18] INFO  LoginTest:32 - Login test completed successfully
+[2025-12-31 16:02:49] INFO  LoginTest:19 - Starting valid Login Test
+[2025-12-31 16:02:49] INFO  LoginTest:24 - Switching to top frame
+[2025-12-31 16:02:49] INFO  LoginTest:28 - Entering email: mukest@gmail.com
+[2025-12-31 16:02:49] INFO  LoginTest:32 - Login test completed successfully
