@@ -17,7 +17,7 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement email;
 
-	public void enterEmails(String emails) {
+	public void enterEmail(String emails) {
 		email.sendKeys(emails);
 
 	}

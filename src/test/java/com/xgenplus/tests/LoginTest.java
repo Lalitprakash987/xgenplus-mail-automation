@@ -27,7 +27,7 @@ public class LoginTest extends BaseClass {
 
 		log.info("Entering email: mukest@gmail.com");
 		test.info("Entering email: mukest@gmail.com");
-		login.enterEmails("mukest@gmail.com");
+		login.enterEmail("mukest@gmail.com");
 
 		log.info("Login test completed successfully");
 		test.pass("Login test completed successfully");
