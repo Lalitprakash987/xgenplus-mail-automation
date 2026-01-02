@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -54,20 +55,21 @@ public class BaseClass {
 	}
 
 	// ExtentReports setup
+
 	@BeforeClass
 	public void setupExtent() {
-		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
+		String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport.html"; // fixed name
 
 		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 		spark.config().setDocumentTitle("Automation Report");
 		spark.config().setReportName("Login Test Report");
-		browserName = "Chrome Browser";
+		spark.config().setOfflineMode(true); // ✅ Critical for Jenkins
+
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
 		extent.setSystemInfo("Tester", "Lalit Fatehpuriya");
 		extent.setSystemInfo("OS", System.getProperty("os.name"));
-		extent.setSystemInfo("Browser", browserName);
+		extent.setSystemInfo("Browser", "Chrome");
 	}
 
 	// Screenshot capture on failure + report flush
@@ -87,8 +89,13 @@ public class BaseClass {
 
 		if (driver != null) {
 			// driver.quit();
-			extent.flush(); // generate report
+
 		}
 
+	}
+
+	@AfterClass
+	public void closeReport() {
+		extent.flush(); // generate report
 	}
 }
