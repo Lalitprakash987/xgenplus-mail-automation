@@ -11,7 +11,7 @@ public class LoginTest extends BaseClass {
 	// Logger creation
 	private static final Logger log = LogManager.getLogger(LoginTest.class);
 
-	@Test(priority = 1)
+	@Test(priority = 1, description = "Verify login functionality with valid email ID")
 	public void validLoginTest() throws InterruptedException {
 		// Extent test creation
 		test = extent.createTest("validLoginTest", "Verify login with valid email");
