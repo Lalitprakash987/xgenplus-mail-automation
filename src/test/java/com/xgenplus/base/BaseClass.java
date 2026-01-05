@@ -25,6 +25,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.xgenplus.utils.ConfigReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
@@ -53,25 +54,26 @@ public class BaseClass {
 			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.get("https://mail.dil.net.in/");
+		driver.get(ConfigReader.get("url"));
 	}
 
 	// ExtentReports setup
 
 	@BeforeSuite
 	public void setupExtent() {
-		String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport.html"; // fixed name
 
+		ConfigReader.loadConfig(); //
+		String reportPath = System.getProperty("user.dir") + "/" + ConfigReader.get("reportPath");// fixed name
 		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 		spark.config().setDocumentTitle("Automation Report");
-		spark.config().setReportName("Login Test Report");
+		spark.config().setReportName(ConfigReader.get("reportName"));
 		spark.config().setOfflineMode(true); // ✅ Critical for Jenkins
-		
+
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
-		extent.setSystemInfo("Tester", "Lalit Fatehpuriya");
+		extent.setSystemInfo("Tester", ConfigReader.get("testerName"));
 		extent.setSystemInfo("OS", System.getProperty("os.name"));
-		extent.setSystemInfo("Browser", "Chrome");
+		extent.setSystemInfo("Browser", ConfigReader.get("browserName"));
 	}
 
 	// Screenshot capture on failure + report flush
@@ -91,13 +93,13 @@ public class BaseClass {
 
 		if (driver != null) {
 			// driver.quit();
-			
+
 		}
-		
 
 	}
+
 	@AfterSuite
 	public void closeReport() {
-	    extent.flush();
+		extent.flush();
 	}
 }

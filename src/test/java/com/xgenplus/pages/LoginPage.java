@@ -18,6 +18,7 @@ public class LoginPage {
 	WebElement email;
 
 	public void enterEmail(String emails) {
+
 		email.sendKeys(emails);
 
 	}

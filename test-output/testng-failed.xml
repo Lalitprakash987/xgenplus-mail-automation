@@ -5,8 +5,10 @@
     <classes>
       <class name="com.xgenplus.tests.LoginTest">
         <methods>
+          <include name="closeReport"/>
           <include name="validLoginTest"/>
           <include name="tearDown"/>
+          <include name="setupExtent"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.xgenplus.tests.LoginTest -->
