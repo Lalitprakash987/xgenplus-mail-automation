@@ -2,31 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T16:57:50 IST" name="Default suite" finished-at="2026-01-05T16:57:54 IST" duration-ms="4538">
+  <suite started-at="2026-01-06T14:24:06 IST" name="Default suite" finished-at="2026-01-06T14:24:09 IST" duration-ms="2643">
     <groups>
     </groups>
-    <test started-at="2026-01-05T16:57:50 IST" name="Default test" finished-at="2026-01-05T16:57:54 IST" duration-ms="4538">
+    <test started-at="2026-01-06T14:24:06 IST" name="Default test" finished-at="2026-01-06T14:24:09 IST" duration-ms="2643">
       <class name="com.xgenplus.tests.LoginTest">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-05T16:57:50 IST" name="setupExtent" finished-at="2026-01-05T16:57:50 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-06T14:24:06 IST" name="setupExtent" finished-at="2026-01-06T14:24:06 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-05T16:57:50 IST" name="setUp" finished-at="2026-01-05T16:57:54 IST" duration-ms="4342" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-06T14:24:06 IST" name="setUp" finished-at="2026-01-06T14:24:09 IST" duration-ms="2109" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.xgenplus.tests.LoginTest.validLoginTest()]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:1, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-05T16:57:54 IST" name="validLoginTest" description="Verify login functionality with valid email ID" finished-at="2026-01-05T16:57:54 IST" duration-ms="159" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-06T14:24:09 IST" name="validLoginTest" description="Verify login functionality with valid email and password" finished-at="2026-01-06T14:24:09 IST" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-05T16:57:54 IST" name="tearDown" finished-at="2026-01-05T16:57:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-06T14:24:09 IST" name="tearDown" finished-at="2026-01-06T14:24:09 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-05T16:57:54 IST" name="closeReport" finished-at="2026-01-05T16:57:55 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.LoginTest@5e81e5ac]" started-at="2026-01-06T14:24:09 IST" name="closeReport" finished-at="2026-01-06T14:24:09 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->

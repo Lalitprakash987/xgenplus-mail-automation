@@ -17,9 +17,30 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement email;
 
+	@FindBy(id = "signinNxt")
+	WebElement next;
+
+	@FindBy(id = "password")
+	WebElement password; 
+	
+	@FindBy(id = "LoginLabel")
+	WebElement Login;
+
 	public void enterEmail(String emails) {
 
 		email.sendKeys(emails);
+
+	}
+
+	public void clickNext() {
+
+		next.click();
+
+	}
+
+	public void enterPassword(String passwords) {
+
+		password.sendKeys(passwords);
 
 	}
 

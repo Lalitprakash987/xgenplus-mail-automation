@@ -2,6 +2,7 @@ package com.xgenplus.base;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -39,12 +40,17 @@ public class BaseClass {
 	// Browser setup
 	@Parameters("browser")
 	@BeforeMethod
-	public void setUp(@Optional("chrome") String browser) {
+	public void setUp(@Optional("chrome") String browser, Method method) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless=new");
+
+			// options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+
 			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -55,6 +61,9 @@ public class BaseClass {
 		}
 		driver.manage().window().maximize();
 		driver.get(ConfigReader.get("url"));
+
+		// 🔥 MOST IMPORTANT LINE
+		test = extent.createTest(method.getName());
 	}
 
 	// ExtentReports setup
