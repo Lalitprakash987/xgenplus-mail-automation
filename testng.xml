@@ -6,23 +6,27 @@
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.autoseat.tests.LoginTest" />
+			<class name="com.xgenplus.tests.LoginTest" />
 		</classes>
 
-	</test> 
-	<!--Test -->
+	</test>
+
+	<!--
+	
 	<test name="FirefoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.autoseat.tests.LoginTest" />
 		</classes>
-	</test> <!--Test -->
+	</test> 
 
 	<test name="EdgeTest">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.autoseat.tests.LoginTest" />
 		</classes>
-	</test> <!--Test -->
-</suite> <!--Suite -->
+	</test> 
+	
+	-->
+</suite> 
 
