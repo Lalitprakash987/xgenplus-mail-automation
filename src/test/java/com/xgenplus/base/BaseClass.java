@@ -40,7 +40,7 @@ public class BaseClass {
 	// Browser setup
 	@Parameters("browser")
 	@BeforeMethod
-	public void setUp(@Optional("chrome") String browser, Method method) {
+	public void setUp(@Optional("chrome") String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -62,8 +62,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.get(ConfigReader.get("url"));
 
-		// 🔥 MOST IMPORTANT LINE
-		test = extent.createTest(method.getName());
+	
 	}
 
 	// ExtentReports setup
