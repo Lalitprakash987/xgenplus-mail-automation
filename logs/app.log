@@ -1,10 +1,10 @@
-[2026-01-06 15:00:32] INFO  LoginTest:23 - ========== Valid Login Test Started ==========
-[2026-01-06 15:00:32] INFO  LoginTest:28 - LoginPage object created
-[2026-01-06 15:00:32] INFO  LoginTest:32 - Switching to top frame
-[2026-01-06 15:00:32] INFO  LoginTest:41 - Entering valid email ID
-[2026-01-06 15:00:32] INFO  LoginTest:46 - Clicking on Next button
-[2026-01-06 15:00:32] INFO  LoginTest:51 - Entering valid password
-[2026-01-06 15:00:32] INFO  LoginTest:56 - Clicking on Login button
-[2026-01-06 15:00:32] INFO  LoginTest:61 - Verifying login success
-[2026-01-06 15:00:32] INFO  LoginTest:68 - Valid Login Test Passed
-[2026-01-06 15:00:32] INFO  LoginTest:71 - ========== Valid Login Test Completed ==========
+[2026-01-07 16:40:27] INFO  LoginTest:23 - ========== Login Test Started ==========
+[2026-01-07 16:40:27] INFO  LoginTest:35 - Switching to login frame
+[2026-01-07 16:40:27] INFO  LoginTest:40 - Performing login using valid credentials
+[2026-01-07 16:40:28] INFO  LoginTest:45 - Handling post-login frames and guided tour if present
+[2026-01-07 16:40:31] INFO  LoginTest:51 - Waiting for inbox URL to be loaded
+[2026-01-07 16:40:31] INFO  LoginTest:59 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
+[2026-01-07 16:40:32] INFO  LoginTest:68 - ========== Invalid Email Login Test Started ==========
+[2026-01-07 16:40:32] INFO  LoginTest:79 - Switching to login frame
+[2026-01-07 16:40:33] INFO  LoginTest:84 - Entering invalid email and clicking Next
+[2026-01-07 16:40:33] INFO  LoginTest:90 - Verifying error message for invalid email

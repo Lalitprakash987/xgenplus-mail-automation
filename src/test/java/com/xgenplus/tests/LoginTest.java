@@ -2,6 +2,8 @@ package com.xgenplus.tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,63 +13,94 @@ import com.xgenplus.utils.TestDataReader;
 
 public class LoginTest extends BaseClass {
 
-    private static final Logger log = LogManager.getLogger(LoginTest.class);
+	private static final Logger log = LogManager.getLogger(LoginTest.class);
 
-    @Test(priority = 1, description = "Verify login functionality with valid email and password")
-    public void validLoginTest() {
+	@Test(priority = 1, description = "Verify login with valid credentials using URL validation")
+	public void validLoginTest() {
 
-        // Create Extent Test
-        test = extent.createTest("Valid Login Test",
-                "Verify login functionality using valid credentials");
+		test = extent.createTest("Valid Login Test", "Verify login functionality using valid credentials");
 
-        log.info("========== Valid Login Test Started ==========");
-        test.info("Valid Login Test Started");
+		log.info("========== Login Test Started ==========");
+		test.info("Login test execution started");
 
-        // Initialize page
-        LoginPage login = new LoginPage(driver);
-        log.info("LoginPage object created");
-        test.info("LoginPage object created");
+		String email = TestDataReader.getData("validEmail");
+		String password = TestDataReader.getData("validPassword");
 
-        // Switch to frame
-        log.info("Switching to top frame");
-        test.info("Switching to top frame");
-        driver.switchTo().frame("topFrame");
-        
-        // Read test data
-        String email = TestDataReader.getData("validEmail");
-        String password = TestDataReader.getData("validPassword");
+		// Step 1: Initialize Login Page
+		log.debug("Initializing LoginPage object");
+		LoginPage loginPage = new LoginPage(driver, wait);
+		test.info("Login page initialized");
 
-        // Enter email
-        log.info("Entering valid email ID");
-        test.info("Entering valid email ID");
-        login.enterEmail(email);
+		// Step 2: Switch to Login Frame
+		log.info("Switching to login frame");
+		test.info("Switching to login frame");
+		driver.switchTo().frame("topFrame");
 
-        // Click Next
-        log.info("Clicking on Next button");
-        test.info("Clicking on Next button");
-        login.clickNext();
+		// Step 3: Perform Login
+		log.info("Performing login using valid credentials");
+		test.info("Entering valid email and password");
+		loginPage.login(email, password);
 
-        // Enter password
-        log.info("Entering valid password");
-        test.info("Entering valid password");
-        login.enterPassword(password);
+		// Step 4: Handle post-login frames and popups
+		log.info("Handling post-login frames and guided tour if present");
+		test.info("Handling post-login popups");
+		loginPage.switchToMailFrame();
+		loginPage.closeGuidedTourIfVisible();
 
-        // Click Login
-        log.info("Clicking on Login button");
-        test.info("Clicking on Login button");
-     //   login.clickLogin();
+		// Step 5: Verify successful login using URL
+		log.info("Waiting for inbox URL to be loaded");
+		test.info("Verifying user is redirected to Inbox page");
 
-        // Verification
-        log.info("Verifying login success");
-        test.info("Verifying login success");
+		wait.until(ExpectedConditions.urlContains("TyHtmMain.jsp"));
+		String actualUrl = driver.getCurrentUrl();
 
-       // boolean loginStatus = login.isLoginSuccessful();
-      //  Assert.assertTrue(loginStatus, "Login failed with valid credentials");
+		Assert.assertTrue(actualUrl.contains("TyHtmMain.jsp"), "Login failed: Inbox URL mismatch. Found: " + actualUrl);
 
-        // Pass status
-        log.info("Valid Login Test Passed");
-        test.pass("Login successful with valid credentials");
+		log.info("Login successful. User redirected to: {}", actualUrl);
+		test.pass("Login successful. User redirected to Inbox page");
+	}
 
-        log.info("========== Valid Login Test Completed ==========");
-    }
+	@Test(priority = 2, description = "Verify login with invalid email")
+	public void invalidEmailLoginTest() {
+
+		test = extent.createTest("Invalid Email Login Test", "Verify login functionality using invalid email");
+
+		log.info("========== Invalid Email Login Test Started ==========");
+		test.info("Login test execution started with invalid email");
+
+		String email = TestDataReader.getData("invalidEmail");
+
+		// Step 1: Initialize Login Page
+		log.debug("Initializing LoginPage object");
+		LoginPage loginPage = new LoginPage(driver, wait);
+		test.info("Login page initialized");
+
+		// Step 2: Switch to Login Frame
+		log.info("Switching to login frame");
+		test.info("Switching to login frame");
+		driver.switchTo().frame("topFrame");
+
+		// Step 3: Enter invalid email and click Next
+		log.info("Entering invalid email and clicking Next");
+		test.info("Entering invalid email and clicking Next");
+		loginPage.enterEmail().sendKeys(email);
+		loginPage.clickNextBtn().click();
+
+		// Step 4: Verify error message         
+		log.info("Verifying error message for invalid email");
+		test.info("Checking for 'User does not Exist |' message");
+
+		String expectedError = "User does not Exist";
+		String actualError = driver.findElement(By.id("emailError")).getText().trim();
+		// Print kar do console me
+		System.out.println("Actual Error Message: [" + actualError + "]");
+
+		Assert.assertTrue(actualError.contains(expectedError),
+				"Test failed: Expected error message not shown. Found: " + actualError);
+
+		log.info("Invalid email login test passed");
+		test.pass("Invalid email login properly blocked by the application");
+
+	}
+
 }

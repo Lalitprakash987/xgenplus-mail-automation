@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 import org.openqa.selenium.OutputType;
@@ -13,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -36,6 +38,7 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static String browserName;
+	protected WebDriverWait wait;
 
 	// Browser setup
 	@Parameters("browser")
@@ -45,7 +48,7 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 
-			// options.addArguments("--headless=new");
+			options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
@@ -59,10 +62,11 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
+
 		driver.manage().window().maximize();
 		driver.get(ConfigReader.get("url"));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-	
 	}
 
 	// ExtentReports setup
