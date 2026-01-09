@@ -3,6 +3,7 @@ package com.xgenplus.tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -58,7 +59,6 @@ public class LoginTest extends BaseClass {
 
 		log.info("Login successful. User redirected to: {}", actualUrl);
 		test.pass("Login successful. User redirected to Inbox page");
-		Thread.sleep(2000);
 	}
 
 	@Test(priority = 2, description = "Verify login with invalid email")
@@ -130,18 +130,17 @@ public class LoginTest extends BaseClass {
 		loginPage.clickPassword().sendKeys(password);
 		loginPage.clickloginBtn().click();
 
-		By loginError = By.id("spLoginErrmsg");
+		WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("spLoginErrmsg")));
+		String actualError = errorElement.getText().trim();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(loginError));
-		String actualError = driver.findElement(loginError).getText().trim();
+		String expectedError = "Invalid Username/Mobile or Password";
 
-		log.info("Error message displayed: {}", actualError);
-		test.info("Error message displayed: " + actualError);
+		Assert.assertTrue(actualError.contains(expectedError),
+				"Test failed: Expected error message not shown. Found: " + actualError);
+		
+		log.info("Invalid password login test passed");
+		test.pass("Invalid password login properly blocked by the application");
 
-		Assert.assertTrue(actualError.toLowerCase().contains("invalid"),
-				"Test failed: Expected invalid password error. Found: " + actualError);
-
-		test.pass("Invalid password login properly blocked by application");
 	}
 
 }

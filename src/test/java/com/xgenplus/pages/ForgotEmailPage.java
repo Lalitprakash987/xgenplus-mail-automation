@@ -18,28 +18,33 @@ public class ForgotEmailPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id = "forgotPwdLink")
+	@FindBy(id = "foorgetEmail")
 	private WebElement forgotPasswordLink;
 
-	@FindBy(id = "email")
-	private WebElement emailTxt;
+	@FindBy(id = "enterMobile")
+	private WebElement MobileTxt;
 
-	@FindBy(id = "submitBtn")
-	private WebElement submitBtn;
+	@FindBy(id = "getNxtOtp")
+	private WebElement nextBtn;
 
-	@FindBy(id = "successMsg")
-	private WebElement successMsg;
+	@FindBy(id = "getNxtEmail")
+	private WebElement nextBtnEmail;
 
-	public void openForgotPassword() {
-		forgotPasswordLink.click();
+	public void openForgotPasswordLink() {
+		wait.until(ExpectedConditions.elementToBeClickable(forgotPasswordLink)).click();
 	}
 
-	public void submitEmail(String email) {
-		wait.until(ExpectedConditions.visibilityOf(emailTxt)).sendKeys(email);
-		submitBtn.click();
+	public void submitMobileNumber(String mobileNumber) {
+		wait.until(ExpectedConditions.visibilityOf(MobileTxt));
+		wait.until(ExpectedConditions.elementToBeClickable(MobileTxt)).sendKeys(mobileNumber);
 	}
 
-	public String getSuccessMessage() {
-		return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();
+	public void clickNextBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(nextBtn)).click();
 	}
+
+	public void clickNextBtnEmail() {
+		wait.until(ExpectedConditions.elementToBeClickable(nextBtnEmail)).click();
+	}
+
 }
