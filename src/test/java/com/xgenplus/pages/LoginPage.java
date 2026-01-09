@@ -1,5 +1,8 @@
 package com.xgenplus.pages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -44,19 +47,31 @@ public class LoginPage {
 	/* ========== ACTION METHODS ========== */
 
 	public void login(String email, String password) {
-		emailTxt.sendKeys(email);
+		// Step 1: Enter email and click Next
+		wait.until(ExpectedConditions.visibilityOf(emailTxt)).sendKeys(email);
 		nextBtn.click();
-		passwordTxt.sendKeys(password);
+
+		// Step 3: Wait for password screen and login
+		wait.until(ExpectedConditions.visibilityOf(passwordTxt)).sendKeys(password);
 		loginBtn.click();
+
+		// Step 2: Handle alert if it appears
+		handleAlreadyLoggedInPopupIfPresent();
 	}
+
 	public WebElement enterEmail() {
-	    return emailTxt;
+		return emailTxt;
 	}
 
 	public WebElement clickNextBtn() {
-	    return nextBtn;
+		return nextBtn;
 	}
-
+	public WebElement clickPassword() {
+		return passwordTxt;
+	}
+	public WebElement clickloginBtn() {
+		return loginBtn;
+	}
 
 	public void switchToMailFrame() {
 		driver.switchTo().defaultContent();
@@ -69,6 +84,19 @@ public class LoginPage {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(guidedTourCloseBtn)).click();
 		} catch (TimeoutException e) {
 
+		}
+	}
+
+	public void handleAlreadyLoggedInPopupIfPresent() {
+		try {
+			WebDriverWait alertWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			Alert alert = alertWait.until(ExpectedConditions.alertIsPresent());
+
+			alert.accept(); // OK click
+
+		} catch (TimeoutException e) {
+
+			System.out.println("No login alert present");
 		}
 	}
 

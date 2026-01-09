@@ -16,7 +16,7 @@ public class LoginTest extends BaseClass {
 	private static final Logger log = LogManager.getLogger(LoginTest.class);
 
 	@Test(priority = 1, description = "Verify login with valid credentials using URL validation")
-	public void validLoginTest() {
+	public void validLoginTest() throws InterruptedException {
 
 		test = extent.createTest("Valid Login Test", "Verify login functionality using valid credentials");
 
@@ -58,6 +58,7 @@ public class LoginTest extends BaseClass {
 
 		log.info("Login successful. User redirected to: {}", actualUrl);
 		test.pass("Login successful. User redirected to Inbox page");
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 2, description = "Verify login with invalid email")
@@ -86,21 +87,61 @@ public class LoginTest extends BaseClass {
 		loginPage.enterEmail().sendKeys(email);
 		loginPage.clickNextBtn().click();
 
-		// Step 4: Verify error message         
+		// Step 4: Verify error message
 		log.info("Verifying error message for invalid email");
-		test.info("Checking for 'User does not Exist |' message");
+		test.info("Checking for 'User does not Exist' message");
 
 		String expectedError = "User does not Exist";
 		String actualError = driver.findElement(By.id("emailError")).getText().trim();
-		// Print kar do console me
-		System.out.println("Actual Error Message: [" + actualError + "]");
 
 		Assert.assertTrue(actualError.contains(expectedError),
 				"Test failed: Expected error message not shown. Found: " + actualError);
 
 		log.info("Invalid email login test passed");
 		test.pass("Invalid email login properly blocked by the application");
+	}
 
+	@Test(priority = 3, description = "Verify login with valid email with invaild password")
+	public void invalidPasswordLoginTest() {
+
+		test = extent.createTest("Invalid Password Login Test", "Verify login functionality using invalid Password");
+
+		log.info("========== Invalid Password Login Test Started ==========");
+		test.info("Login test execution started with InvaildPassword email");
+
+		String email = TestDataReader.getData("validEmail");
+		String password = TestDataReader.getData("invalidPassword");
+
+		// Step 1: Initialize Login Page
+		log.debug("Initializing LoginPage object");
+		LoginPage loginPage = new LoginPage(driver, wait);
+		test.info("Login page initialized");
+
+		// Step 2: Switch to Login Frame
+		log.info("Switching to login frame");
+		test.info("Switching to login frame");
+		driver.switchTo().frame("topFrame");
+
+		// Step 3: Enter invalid email and click Next
+		log.info("Entering valid email and clicking Next");
+		test.info("Entering valid email and clicking Next");
+		loginPage.enterEmail().sendKeys(email);
+		loginPage.clickNextBtn().click();
+		loginPage.clickPassword().sendKeys(password);
+		loginPage.clickloginBtn().click();
+
+		By loginError = By.id("spLoginErrmsg");
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginError));
+		String actualError = driver.findElement(loginError).getText().trim();
+
+		log.info("Error message displayed: {}", actualError);
+		test.info("Error message displayed: " + actualError);
+
+		Assert.assertTrue(actualError.toLowerCase().contains("invalid"),
+				"Test failed: Expected invalid password error. Found: " + actualError);
+
+		test.pass("Invalid password login properly blocked by application");
 	}
 
 }

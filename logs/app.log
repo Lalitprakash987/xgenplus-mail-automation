@@ -1,10 +1,15 @@
-[2026-01-07 16:40:27] INFO  LoginTest:23 - ========== Login Test Started ==========
-[2026-01-07 16:40:27] INFO  LoginTest:35 - Switching to login frame
-[2026-01-07 16:40:27] INFO  LoginTest:40 - Performing login using valid credentials
-[2026-01-07 16:40:28] INFO  LoginTest:45 - Handling post-login frames and guided tour if present
-[2026-01-07 16:40:31] INFO  LoginTest:51 - Waiting for inbox URL to be loaded
-[2026-01-07 16:40:31] INFO  LoginTest:59 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
-[2026-01-07 16:40:32] INFO  LoginTest:68 - ========== Invalid Email Login Test Started ==========
-[2026-01-07 16:40:32] INFO  LoginTest:79 - Switching to login frame
-[2026-01-07 16:40:33] INFO  LoginTest:84 - Entering invalid email and clicking Next
-[2026-01-07 16:40:33] INFO  LoginTest:90 - Verifying error message for invalid email
+[2026-01-09 14:58:50] INFO  LoginTest:23 - ========== Login Test Started ==========
+[2026-01-09 14:58:50] INFO  LoginTest:35 - Switching to login frame
+[2026-01-09 14:58:51] INFO  LoginTest:40 - Performing login using valid credentials
+[2026-01-09 14:58:56] INFO  LoginTest:45 - Handling post-login frames and guided tour if present
+[2026-01-09 14:58:59] INFO  LoginTest:51 - Waiting for inbox URL to be loaded
+[2026-01-09 14:59:00] INFO  LoginTest:59 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
+[2026-01-09 14:59:03] INFO  LoginTest:69 - ========== Invalid Email Login Test Started ==========
+[2026-01-09 14:59:03] INFO  LoginTest:80 - Switching to login frame
+[2026-01-09 14:59:03] INFO  LoginTest:85 - Entering invalid email and clicking Next
+[2026-01-09 14:59:03] INFO  LoginTest:91 - Verifying error message for invalid email
+[2026-01-09 14:59:03] INFO  LoginTest:100 - Invalid email login test passed
+[2026-01-09 14:59:06] INFO  LoginTest:109 - ========== Invalid Password Login Test Started ==========
+[2026-01-09 14:59:06] INFO  LoginTest:121 - Switching to login frame
+[2026-01-09 14:59:06] INFO  LoginTest:126 - Entering valid email and clicking Next
+[2026-01-09 14:59:07] INFO  LoginTest:138 - Error message displayed: Invalid Username/Mobile or Password
