@@ -21,7 +21,7 @@ public class ForgotEmailPage {
 	@FindBy(id = "foorgetEmail")
 	private WebElement forgotPasswordLink;
 
-	@FindBy(id = "enterMobile")
+	@FindBy(id = "mobileNumber")
 	private WebElement MobileTxt;
 
 	@FindBy(id = "getNxtOtp")
@@ -35,8 +35,8 @@ public class ForgotEmailPage {
 	}
 
 	public void submitMobileNumber(String mobileNumber) {
-		wait.until(ExpectedConditions.visibilityOf(MobileTxt));
-		wait.until(ExpectedConditions.elementToBeClickable(MobileTxt)).sendKeys(mobileNumber);
+		wait.until(ExpectedConditions.elementToBeClickable(MobileTxt));
+		MobileTxt.sendKeys(mobileNumber);
 	}
 
 	public void clickNextBtn() {
@@ -47,4 +47,7 @@ public class ForgotEmailPage {
 		wait.until(ExpectedConditions.elementToBeClickable(nextBtnEmail)).click();
 	}
 
+	public WebElement clicknBtn() {
+		return MobileTxt;
+	}
 }

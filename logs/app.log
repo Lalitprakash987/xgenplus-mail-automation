@@ -1,1 +1,38 @@
-[2026-01-09 17:56:21] INFO  ForgotEmailTest:49 - ========== Login Test Started ==========
+[2026-01-10 12:08:33] INFO  LoginTest:24 - ========== Login Test Started ==========
+[2026-01-10 12:08:33] INFO  LoginTest:36 - Switching to login frame
+[2026-01-10 12:08:33] INFO  LoginTest:41 - Performing login using valid credentials
+[2026-01-10 12:08:34] INFO  LoginTest:46 - Handling post-login frames and guided tour if present
+[2026-01-10 12:08:38] INFO  LoginTest:52 - Waiting for inbox URL to be loaded
+[2026-01-10 12:08:38] INFO  LoginTest:60 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
+[2026-01-10 12:08:39] INFO  LoginTest:69 - ========== Invalid Email Login Test Started ==========
+[2026-01-10 12:08:39] INFO  LoginTest:80 - Switching to login frame
+[2026-01-10 12:08:39] INFO  LoginTest:85 - Entering invalid email and clicking Next
+[2026-01-10 12:08:40] INFO  LoginTest:91 - Verifying error message for invalid email
+[2026-01-10 12:08:40] INFO  LoginTest:100 - Invalid email login test passed
+[2026-01-10 12:08:42] INFO  LoginTest:109 - ========== Invalid Password Login Test Started ==========
+[2026-01-10 12:08:42] INFO  LoginTest:121 - Switching to login frame
+[2026-01-10 12:08:42] INFO  LoginTest:126 - Entering valid email and clicking Next
+[2026-01-10 12:08:43] INFO  LoginTest:141 - Invalid password login test passed
+[2026-01-10 12:08:44] INFO  ForgotEmailTest:24 - ========== Forgot Email Test Started: No Mobile Number ==========
+[2026-01-10 12:08:44] INFO  ForgotEmailTest:30 - Switching to top frame for Forgot Email page
+[2026-01-10 12:08:44] INFO  ForgotEmailTest:35 - Clicking on 'Forgot Password' link
+[2026-01-10 12:08:44] INFO  ForgotEmailTest:40 - Clicking Next without entering mobile number
+[2026-01-10 12:08:45] INFO  ForgotEmailTest:45 - Verifying error message for empty mobile number
+[2026-01-10 12:08:45] INFO  ForgotEmailTest:54 - Test passed: Correct error message displayed for empty mobile number
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:63 - ========== Forgot Email Test Started: Invalid Mobile Number ==========
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:70 - Switching to top frame for Forgot Email page
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:75 - Clicking on 'Forgot Password' link
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:84 - Entering invalid mobile number: 8769276921
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:89 - Clicking Next button
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:94 - Verifying error message 'Mobile Number not Exists!'
+[2026-01-10 12:08:47] INFO  ForgotEmailTest:103 - Test passed: Correct error message displayed for non-existent mobile number
+[2026-01-10 12:08:49] INFO  ForgotEmailTest:112 - ========== Forgot Email Test Started: Mobile Number Too Long ==========
+[2026-01-10 12:08:49] INFO  ForgotEmailTest:123 - Entering long mobile number: 876927692126
+[2026-01-10 12:08:49] INFO  ForgotEmailTest:127 - Clicking Next button
+[2026-01-10 12:08:49] INFO  ForgotEmailTest:131 - Verifying error message 'Please put 10 digit mobile number'
+[2026-01-10 12:08:49] INFO  ForgotEmailTest:140 - Test passed: Correct error message displayed for mobile number exceeding 10 digits
+[2026-01-10 12:08:51] INFO  ForgotEmailTest:149 - ========== Forgot Email Test Started: Mobile Number With Alphabets ==========
+[2026-01-10 12:08:51] INFO  ForgotEmailTest:160 - Entering mobile number with alphabets: 98765abcde
+[2026-01-10 12:08:51] INFO  ForgotEmailTest:164 - Clicking Next button
+[2026-01-10 12:08:51] INFO  ForgotEmailTest:168 - Verifying error message 'Not a valid number'
+[2026-01-10 12:08:51] INFO  ForgotEmailTest:177 - Test passed: Correct error message displayed for mobile number with alphabets

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" panel-name="suite-CrossBrowserSuite" class="navigator-link">
+              <span class="suite-name border-passed">CrossBrowserSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--1850306415\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-CrossBrowserSuite" class="navigator-link ">
+                    <span>C:\Users\HP\eclipse-workspace\xgenplus-mail-automation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-CrossBrowserSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-CrossBrowserSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-CrossBrowserSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-CrossBrowserSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-CrossBrowserSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-CrossBrowserSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,51 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="hide-methods passed suite-CrossBrowserSuite"> (hide)</a> <!-- hide-methods passed suite-CrossBrowserSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods passed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods passed suite-CrossBrowserSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-CrossBrowserSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="forgotEmailWithoutPhoneNumberTestt">forgotEmailWithoutPhoneNumberTestt</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="invalidEmailLoginTest">invalidEmailLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="invalidPasswordLoginTest">invalidPasswordLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithAlphabetsInMobile">testForgotEmailWithAlphabetsInMobile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithInvalidMobileNumber">testForgotEmailWithInvalidMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithLongMobileNumber">testForgotEmailWithLongMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithoutMobileNumber">testForgotEmailWithoutMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowserSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,205 +147,306 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-CrossBrowserSuite" class="panel CrossBrowserSuite">
+          <div class="suite-CrossBrowserSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.xgenplus.tests.ForgotEmailTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.xgenplus.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="forgotEmailWithoutPhoneNumberTestt">
-                  </a> <!-- forgotEmailWithoutPhoneNumberTestt -->
-                  <span class="method-name">forgotEmailWithoutPhoneNumberTestt</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44b77e022af960fa3aab115abee73204, sendKeysToElement {value=[Ljava.lang.CharSequence;@19a64eae, id=f.862333F821E2911B994B9CD8DE795F0C.d.92A278DF0B7E1301028D9D835212C82E.e.40}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64391}, goog:processID: 27372, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64391/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (44b77e022af960fa3aab115abee73204)] -&gt; id: enterMobile]
-Session ID: 44b77e022af960fa3aab115abee73204
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
-	at com.xgenplus.pages.ForgotEmailPage.submitMobileNumber(ForgotEmailPage.java:39)
-	at com.xgenplus.tests.ForgotEmailTest.forgotEmailWithoutPhoneNumberTestt(ForgotEmailTest.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
+                  <a name="invalidEmailLoginTest">
+                  </a> <!-- invalidEmailLoginTest -->
+                  <span class="method-name">invalidEmailLoginTest</span>
+                  <em>
+(Verify login with invalid email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordLoginTest">
+                  </a> <!-- invalidPasswordLoginTest -->
+                  <span class="method-name">invalidPasswordLoginTest</span>
+                  <em>
+(Verify login with valid email with invaild password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
                   <em>
 (Verify login with valid credentials using URL validation)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+          <div class="suite-CrossBrowserSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xgenplus.tests.ForgotEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithAlphabetsInMobile">
+                  </a> <!-- testForgotEmailWithAlphabetsInMobile -->
+                  <span class="method-name">testForgotEmailWithAlphabetsInMobile</span>
+                  <em>
+(Verify error message for mobile number containing alphabets)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithInvalidMobileNumber">
+                  </a> <!-- testForgotEmailWithInvalidMobileNumber -->
+                  <span class="method-name">testForgotEmailWithInvalidMobileNumber</span>
+                  <em>
+(Verify error message for non-existent mobile number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithLongMobileNumber">
+                  </a> <!-- testForgotEmailWithLongMobileNumber -->
+                  <span class="method-name">testForgotEmailWithLongMobileNumber</span>
+                  <em>
+(Verify error message for mobile number exceeding 10 digits)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithoutMobileNumber">
+                  </a> <!-- testForgotEmailWithoutMobileNumber -->
+                  <span class="method-name">testForgotEmailWithoutMobileNumber</span>
+                  <em>
+(Verify error message when mobile number is not provided)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+        </div> <!-- panel CrossBrowserSuite -->
+        <div panel-name="test-xml-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--1850306415\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\eclipse-workspace\xgenplus-mail-automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;CrossBrowserSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.xgenplus.tests.ForgotEmailTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;forgotEmailWithoutPhoneNumberTestt&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.xgenplus.tests.ForgotEmailTest --&gt;
+      &lt;class name=&quot;com.xgenplus.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.xgenplus.tests.ForgotEmailTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowserSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">ChromeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_CrossBrowserSuite');
+function tableData_CrossBrowserSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'forgotEmailWithoutPhoneNumberTestt')
-data.setCell(0, 2, 'com.xgenplus.tests.ForgotEmailTest')
-data.setCell(0, 3, 1068);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'validLoginTest')
+data.setCell(0, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(0, 3, 4630);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidPasswordLoginTest')
+data.setCell(1, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(1, 3, 1110);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testForgotEmailWithoutMobileNumber')
+data.setCell(2, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(2, 3, 1025);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testForgotEmailWithInvalidMobileNumber')
+data.setCell(3, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(3, 3, 677);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testForgotEmailWithLongMobileNumber')
+data.setCell(4, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(4, 3, 640);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testForgotEmailWithAlphabetsInMobile')
+data.setCell(5, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(5, 3, 640);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidEmailLoginTest')
+data.setCell(6, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(6, 3, 353);
+window.suiteTableData['CrossBrowserSuite']= { tableData: data, tableDiv: 'times-div-CrossBrowserSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-CrossBrowserSuite">
+              </div> <!-- times-div-CrossBrowserSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.xgenplus.tests.ForgotEmailTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">forgotEmailWithoutPhoneNumberTest</span>
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">setupExtent</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.xgenplus.tests.ForgotEmailTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.xgenplus.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">214 ms</span>
+                <span class="method-start">195 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">forgotEmailWithoutPhoneNumberTestt</span>
-                <span class="method-start">1724 ms</span>
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">2275 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=forgotEmailWithoutPhoneNumberTestt status=FAILURE method=ForgotEmailTest.forgotEmai...)</span>
-                <span class="method-start">2797 ms</span>
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:1, instance:com...)</span>
+                <span class="method-start">6907 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">7069 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailLoginTest</span>
+                <span class="method-start">8245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidEmailLoginTest status=SUCCESS method=LoginTest.invalidEmailLoginTest()[pri:2...)</span>
+                <span class="method-start">8600 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">8696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordLoginTest</span>
+                <span class="method-start">10581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidPasswordLoginTest status=SUCCESS method=LoginTest.invalidPasswordLoginTest()...)</span>
+                <span class="method-start">11691 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.ForgotEmailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">11812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithoutMobileNumber</span>
+                <span class="method-start">13167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithoutMobileNumber status=SUCCESS method=ForgotEmailTest.testForgot...)</span>
+                <span class="method-start">14192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">14303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithInvalidMobileNumber</span>
+                <span class="method-start">15594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithInvalidMobileNumber status=SUCCESS method=ForgotEmailTest.testFo...)</span>
+                <span class="method-start">16273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">16397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithLongMobileNumber</span>
+                <span class="method-start">17641 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithLongMobileNumber status=SUCCESS method=ForgotEmailTest.testForgo...)</span>
+                <span class="method-start">18282 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">18393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithAlphabetsInMobile</span>
+                <span class="method-start">19736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithAlphabetsInMobile status=SUCCESS method=ForgotEmailTest.testForg...)</span>
+                <span class="method-start">20376 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">3027 ms</span>
+                <span class="method-start">20574 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
