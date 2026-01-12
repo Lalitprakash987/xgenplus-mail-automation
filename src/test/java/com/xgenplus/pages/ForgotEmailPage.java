@@ -19,7 +19,7 @@ public class ForgotEmailPage {
 	}
 
 	@FindBy(id = "foorgetEmail")
-	private WebElement forgotPasswordLink;
+	private WebElement forgotEmailLink;
 
 	@FindBy(id = "mobileNumber")
 	private WebElement MobileTxt;
@@ -31,7 +31,7 @@ public class ForgotEmailPage {
 	private WebElement nextBtnEmail;
 
 	public void openForgotPasswordLink() {
-		wait.until(ExpectedConditions.elementToBeClickable(forgotPasswordLink)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(forgotEmailLink)).click();
 	}
 
 	public void submitMobileNumber(String mobileNumber) {

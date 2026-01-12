@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 10 12:08:31 IST 2026</td>
+<td>Started on:</td><td>Mon Jan 12 16:04:37 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20395 ms)</td>
+<tr><td>Total time:</td><td>58 seconds (58158 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,40 +76,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.xgenplus.tests.LoginTest.invalidPasswordLoginTest()'><b>invalidPasswordLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with valid email with invaild password</td>
-<td></td>
-<td>1</td>
-<td>com.xgenplus.tests.LoginTest@1a7288a3</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithLongMobileNumber()'><b>testForgotEmailWithLongMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number exceeding 10 digits</td>
+<td title='com.xgenplus.tests.LoginTest.invalidEmailLoginTest()'><b>invalidEmailLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with invalid email</td>
 <td></td>
 <td>0</td>
-<td>com.xgenplus.tests.ForgotEmailTest@68b6f0d6</td></tr>
+<td>com.xgenplus.tests.LoginTest@1bb564e2</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenSecurityAnswersAreBlank()'><b>verifyErrorWhenSecurityAnswersAreBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when security answers are skipped</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithAlphabetsInMobile()'><b>testForgotEmailWithAlphabetsInMobile</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number containing alphabets</td>
+<td></td>
+<td>1</td>
+<td>com.xgenplus.tests.ForgotEmailTest@1cbf6e72</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForPasswordMismatch()'><b>verifyErrorForPasswordMismatch</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password and confirm password do not match</td>
+<td></td>
+<td>3</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
 <tr>
 <td title='com.xgenplus.tests.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with valid credentials using URL validation</td>
 <td></td>
 <td>4</td>
-<td>com.xgenplus.tests.LoginTest@1a7288a3</td></tr>
+<td>com.xgenplus.tests.LoginTest@1bb564e2</td></tr>
 <tr>
-<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithAlphabetsInMobile()'><b>testForgotEmailWithAlphabetsInMobile</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number containing alphabets</td>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCountryNameIsBlank()'><b>verifyErrorWhenCountryNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when country name is not provided</td>
 <td></td>
-<td>0</td>
-<td>com.xgenplus.tests.ForgotEmailTest@68b6f0d6</td></tr>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
 <tr>
-<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithoutMobileNumber()'><b>testForgotEmailWithoutMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message when mobile number is not provided</td>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifySuccessfulPasswordResetUsingSecurityQuestions()'><b>verifySuccessfulPasswordResetUsingSecurityQuestions</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify successful password reset with valid security answers</td>
+<td></td>
+<td>4</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyResetPasswordViaEmail()'><b>verifyResetPasswordViaEmail</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify instruction message when reset password email option is selected</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.LoginTest.invalidPasswordLoginTest()'><b>invalidPasswordLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with valid email with invaild password</td>
 <td></td>
 <td>1</td>
-<td>com.xgenplus.tests.ForgotEmailTest@68b6f0d6</td></tr>
+<td>com.xgenplus.tests.LoginTest@1bb564e2</td></tr>
 <tr>
 <td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithInvalidMobileNumber()'><b>testForgotEmailWithInvalidMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for non-existent mobile number</td>
 <td></td>
 <td>0</td>
-<td>com.xgenplus.tests.ForgotEmailTest@68b6f0d6</td></tr>
+<td>com.xgenplus.tests.ForgotEmailTest@1cbf6e72</td></tr>
 <tr>
-<td title='com.xgenplus.tests.LoginTest.invalidEmailLoginTest()'><b>invalidEmailLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with invalid email</td>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCityNameIsBlank()'><b>verifyErrorWhenCityNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when city name is not provided</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForIncorrectSecurityAnswers()'><b>verifyErrorForIncorrectSecurityAnswers</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when incorrect security answers are provided</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenPasswordIsMissing()'><b>verifyErrorWhenPasswordIsMissing</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password is not entered</td>
+<td></td>
+<td>3</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@6aecbb8d</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithLongMobileNumber()'><b>testForgotEmailWithLongMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number exceeding 10 digits</td>
 <td></td>
 <td>0</td>
-<td>com.xgenplus.tests.LoginTest@1a7288a3</td></tr>
+<td>com.xgenplus.tests.ForgotEmailTest@1cbf6e72</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithoutMobileNumber()'><b>testForgotEmailWithoutMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message when mobile number is not provided</td>
+<td></td>
+<td>1</td>
+<td>com.xgenplus.tests.ForgotEmailTest@1cbf6e72</td></tr>
 </table><p>
 </body>
 </html>

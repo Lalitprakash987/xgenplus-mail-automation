@@ -8,6 +8,9 @@
 		<classes>
 			<class name="com.xgenplus.tests.LoginTest" />
 			<class name="com.xgenplus.tests.ForgotEmailTest" />
+			<class name="com.xgenplus.tests.ForgotPasswordTest" />
+
+
 		</classes>
 
 	</test>

@@ -91,11 +91,13 @@ public class LoginTest extends BaseClass {
 		log.info("Verifying error message for invalid email");
 		test.info("Checking for 'User does not Exist' message");
 
-		String expectedError = "User does not Exist";
-		String actualError = driver.findElement(By.id("emailError")).getText().trim();
+		WebElement messageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("emailError")));
 
-		Assert.assertTrue(actualError.contains(expectedError),
-				"Test failed: Expected error message not shown. Found: " + actualError);
+		String actualMessage = messageElement.getText().trim();
+		String expectedMessage = "User does not Exist";
+
+		Assert.assertTrue(actualMessage.contains(expectedMessage),
+				"Expected instruction message not displayed. Found: " + actualMessage);
 
 		log.info("Invalid email login test passed");
 		test.pass("Invalid email login properly blocked by the application");
@@ -137,7 +139,7 @@ public class LoginTest extends BaseClass {
 
 		Assert.assertTrue(actualError.contains(expectedError),
 				"Test failed: Expected error message not shown. Found: " + actualError);
-		
+
 		log.info("Invalid password login test passed");
 		test.pass("Invalid password login properly blocked by the application");
 

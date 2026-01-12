@@ -63,7 +63,7 @@ public class ForgotEmailTest extends BaseClass {
         log.info("========== Forgot Email Test Started: Invalid Mobile Number ==========");
         test.info("Test execution started");
 
-        String invalidMobile = TestDataReader.getData("InVaildMobileNumber");
+        String invalidMobile = TestDataReader.getData("invalidMobileNumber");
         ForgotEmailPage forgotEmail = new ForgotEmailPage(driver, wait);
 
         // Step 1: Switch to frame
