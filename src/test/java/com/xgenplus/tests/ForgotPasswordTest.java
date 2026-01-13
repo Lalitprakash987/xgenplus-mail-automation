@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.xgenplus.base.BaseClass;
 import com.xgenplus.pages.ForgotPasswordPage;
+import com.xgenplus.utils.TestDataReader;
 
 public class ForgotPasswordTest extends BaseClass {
 
@@ -33,7 +34,7 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Entering registered email");
 		test.info("Step 2: Enter registered email");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 
 		log.info("Clicking Next button");
 		test.info("Step 3: Click Next");
@@ -82,7 +83,7 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Entering registered email");
 		test.info("Step 2: Enter registered email");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 
 		log.info("Clicking Next button");
 		test.info("Step 3: Click Next");
@@ -102,9 +103,9 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Entering valid security answers");
 		test.info("Step 7: Enter pet name, city and country");
-		forgotPassword.enterPetName("sia");
-		forgotPassword.enterCityName("jaipur");
-		forgotPassword.enterCountryName("india");
+		forgotPassword.enterPetName(TestDataReader.getData("validPetName"));
+		forgotPassword.enterCityName(TestDataReader.getData("validCity"));
+		forgotPassword.enterCountryName(TestDataReader.getData("validCountry"));
 
 		log.info("Submitting security answers");
 		test.info("Step 8: Submit security answers");
@@ -151,14 +152,14 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Completing security verification");
 		test.info("Step 2: Complete security verification");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
 		forgotPassword.clickSendDifferentVerificationOption();
-		forgotPassword.enterPetName("sia");
-		forgotPassword.enterCityName("jaipur");
-		forgotPassword.enterCountryName("india");
+		forgotPassword.enterPetName(TestDataReader.getData("validPetName"));
+		forgotPassword.enterCityName(TestDataReader.getData("validCity"));
+		forgotPassword.enterCountryName(TestDataReader.getData("validCountry"));
 		forgotPassword.clickResetPasswordNextButton();
 
 		log.info("Submitting empty password fields");
@@ -195,20 +196,21 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Navigating to password reset using security questions");
 		test.info("Step 2: Complete security verification flow");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
 		forgotPassword.clickSendDifferentVerificationOption();
-		forgotPassword.enterPetName("sia");
-		forgotPassword.enterCityName("jaipur");
-		forgotPassword.enterCountryName("india");
+		forgotPassword.enterPetName(TestDataReader.getData("validPetName"));
+		forgotPassword.enterCityName(TestDataReader.getData("validCity"));
+		forgotPassword.enterCountryName(TestDataReader.getData("validCountry"));
 		forgotPassword.clickResetPasswordNextButton();
 
 		log.info("Entering mismatched passwords");
 		test.info("Step 3: Enter mismatched password and confirm password");
-		forgotPassword.enterNewPassword("123");
-		forgotPassword.enterRePassword("1234");
+		forgotPassword.enterNewPassword(TestDataReader.getData("validPassword"));
+		forgotPassword.enterRePassword(TestDataReader.getData("invalidPassword"));
+
 		forgotPassword.clickChangePassword();
 
 		WebElement errorElement = wait
@@ -241,7 +243,7 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Navigating to security verification without answers");
 		test.info("Step 2: Proceed without answering security questions");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
@@ -277,12 +279,12 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Submitting security answers with missing city");
 		test.info("Step 2: Enter pet name only and submit");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
 		forgotPassword.clickSendDifferentVerificationOption();
-		forgotPassword.enterPetName("sia");
+		forgotPassword.enterPetName(TestDataReader.getData("validPetName"));
 		forgotPassword.clickResetPasswordNextButton();
 
 		WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("skipQueError")));
@@ -314,13 +316,13 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Submitting security answers with missing country");
 		test.info("Step 2: Enter pet name and city only");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
 		forgotPassword.clickSendDifferentVerificationOption();
-		forgotPassword.enterPetName("sia");
-		forgotPassword.enterCityName("jaipur");
+		forgotPassword.enterPetName(TestDataReader.getData("validPetName"));
+		forgotPassword.enterCityName(TestDataReader.getData("validCity"));
 		forgotPassword.clickResetPasswordNextButton();
 
 		WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("skipQueError")));
@@ -352,14 +354,14 @@ public class ForgotPasswordTest extends BaseClass {
 
 		log.info("Submitting incorrect security answers");
 		test.info("Step 2: Enter incorrect security answers");
-		forgotPassword.enterEmail("lalit1@dil.net.in");
+		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();
 		forgotPassword.clickResetPasswordNext();
 		forgotPassword.clickSendDifferentVerificationOption();
-		forgotPassword.enterPetName("siaa");
-		forgotPassword.enterCityName("jaipurr");
-		forgotPassword.enterCountryName("indiaa");
+		forgotPassword.enterPetName(TestDataReader.getData("invalidPetName"));
+		forgotPassword.enterCityName(TestDataReader.getData("invalidCity"));
+		forgotPassword.enterCountryName(TestDataReader.getData("invalidCountry"));
 		forgotPassword.clickResetPasswordNextButton();
 
 		WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("skipQueError")));

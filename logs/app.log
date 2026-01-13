@@ -1,87 +1,49 @@
-[2026-01-12 16:04:38] INFO  LoginTest:24 - ========== Login Test Started ==========
-[2026-01-12 16:04:38] INFO  LoginTest:36 - Switching to login frame
-[2026-01-12 16:04:39] INFO  LoginTest:41 - Performing login using valid credentials
-[2026-01-12 16:04:40] INFO  LoginTest:46 - Handling post-login frames and guided tour if present
-[2026-01-12 16:04:43] INFO  LoginTest:52 - Waiting for inbox URL to be loaded
-[2026-01-12 16:04:43] INFO  LoginTest:60 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:24 - ========== TEST STARTED : Reset Password Instruction ==========
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:28 - ForgotPasswordPage initialized
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:30 - Switching to top frame
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:34 - Entering registered email
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:38 - Clicking Next button
-[2026-01-12 16:04:45] INFO  ForgotPasswordTest:42 - Clicking Forgot Password link
-[2026-01-12 16:04:46] INFO  ForgotPasswordTest:46 - Proceeding with reset password option
-[2026-01-12 16:04:46] INFO  ForgotPasswordTest:50 - Selecting Send Password Email option
-[2026-01-12 16:04:48] INFO  ForgotPasswordTest:63 - VerifyResetPasswordViaEmail
-[2026-01-12 16:04:49] INFO  LoginTest:69 - ========== Invalid Email Login Test Started ==========
-[2026-01-12 16:04:49] INFO  LoginTest:80 - Switching to login frame
-[2026-01-12 16:04:49] INFO  LoginTest:85 - Entering invalid email and clicking Next
-[2026-01-12 16:04:50] INFO  LoginTest:91 - Verifying error message for invalid email
-[2026-01-12 16:04:50] INFO  LoginTest:102 - Invalid email login test passed
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:73 - ========== TEST STARTED : Successful Password Reset ==========
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:77 - ForgotPasswordPage initialized
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:79 - Switching to top frame
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:83 - Entering registered email
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:87 - Clicking Next button
-[2026-01-12 16:04:51] INFO  ForgotPasswordTest:91 - Navigating to Forgot Password flow
-[2026-01-12 16:04:52] INFO  ForgotPasswordTest:95 - Proceeding to reset options
-[2026-01-12 16:04:52] INFO  ForgotPasswordTest:99 - Selecting security question verification
-[2026-01-12 16:04:53] INFO  ForgotPasswordTest:103 - Entering valid security answers
-[2026-01-12 16:04:54] INFO  ForgotPasswordTest:109 - Submitting security answers
-[2026-01-12 16:04:54] INFO  ForgotPasswordTest:113 - Entering new password
-[2026-01-12 16:04:55] INFO  ForgotPasswordTest:118 - Submitting password change request
-[2026-01-12 16:04:55] INFO  ForgotPasswordTest:122 - Validating success message
-[2026-01-12 16:04:55] INFO  ForgotPasswordTest:133 - Password reset completed successfully
-[2026-01-12 16:04:57] INFO  LoginTest:111 - ========== Invalid Password Login Test Started ==========
-[2026-01-12 16:04:57] INFO  LoginTest:123 - Switching to login frame
-[2026-01-12 16:04:57] INFO  LoginTest:128 - Entering valid email and clicking Next
-[2026-01-12 16:04:58] INFO  LoginTest:143 - Invalid password login test passed
-[2026-01-12 16:05:00] INFO  ForgotPasswordTest:143 - ========== TEST STARTED : Missing Password Validation ==========
-[2026-01-12 16:05:00] INFO  ForgotPasswordTest:148 - Switching to top frame
-[2026-01-12 16:05:01] INFO  ForgotPasswordTest:152 - Completing security verification
-[2026-01-12 16:05:03] INFO  ForgotPasswordTest:164 - Submitting empty password fields
-[2026-01-12 16:05:04] INFO  ForgotPasswordTest:177 - Password mandatory validation verified
-[2026-01-12 16:05:05] INFO  ForgotEmailTest:24 - ========== Forgot Email Test Started: No Mobile Number ==========
-[2026-01-12 16:05:05] INFO  ForgotEmailTest:30 - Switching to top frame for Forgot Email page
-[2026-01-12 16:05:05] INFO  ForgotEmailTest:35 - Clicking on 'Forgot Password' link
-[2026-01-12 16:05:06] INFO  ForgotEmailTest:40 - Clicking Next without entering mobile number
-[2026-01-12 16:05:06] INFO  ForgotEmailTest:45 - Verifying error message for empty mobile number
-[2026-01-12 16:05:06] INFO  ForgotEmailTest:54 - Test passed: Correct error message displayed for empty mobile number
-[2026-01-12 16:05:08] INFO  ForgotPasswordTest:187 - ========== TEST STARTED : Password Mismatch Validation ==========
-[2026-01-12 16:05:08] INFO  ForgotPasswordTest:192 - Switching to top frame
-[2026-01-12 16:05:08] INFO  ForgotPasswordTest:196 - Navigating to password reset using security questions
-[2026-01-12 16:05:10] INFO  ForgotPasswordTest:208 - Entering mismatched passwords
-[2026-01-12 16:05:11] INFO  ForgotPasswordTest:223 - Password mismatch validation verified successfully
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:63 - ========== Forgot Email Test Started: Invalid Mobile Number ==========
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:70 - Switching to top frame for Forgot Email page
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:75 - Clicking on 'Forgot Password' link
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:84 - Entering invalid mobile number: 8769276921
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:89 - Clicking Next button
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:94 - Verifying error message 'Mobile Number not Exists!'
-[2026-01-12 16:05:13] INFO  ForgotEmailTest:103 - Test passed: Correct error message displayed for non-existent mobile number
-[2026-01-12 16:05:15] INFO  ForgotPasswordTest:233 - ========== TEST STARTED : Blank Security Answers ==========
-[2026-01-12 16:05:15] INFO  ForgotPasswordTest:238 - Switching to top frame
-[2026-01-12 16:05:15] INFO  ForgotPasswordTest:242 - Navigating to security verification without answers
-[2026-01-12 16:05:17] INFO  ForgotPasswordTest:259 - Security answer blank validation verified
-[2026-01-12 16:05:19] INFO  ForgotEmailTest:112 - ========== Forgot Email Test Started: Mobile Number Too Long ==========
-[2026-01-12 16:05:19] INFO  ForgotEmailTest:123 - Entering long mobile number: 876927692126
-[2026-01-12 16:05:19] INFO  ForgotEmailTest:127 - Clicking Next button
-[2026-01-12 16:05:19] INFO  ForgotEmailTest:131 - Verifying error message 'Please put 10 digit mobile number'
-[2026-01-12 16:05:19] INFO  ForgotEmailTest:140 - Test passed: Correct error message displayed for mobile number exceeding 10 digits
-[2026-01-12 16:05:22] INFO  ForgotPasswordTest:269 - ========== TEST STARTED : Blank City Validation ==========
-[2026-01-12 16:05:22] INFO  ForgotPasswordTest:274 - Switching to top frame
-[2026-01-12 16:05:22] INFO  ForgotPasswordTest:278 - Submitting security answers with missing city
-[2026-01-12 16:05:25] INFO  ForgotPasswordTest:296 - City blank validation verified
-[2026-01-12 16:05:25] INFO  ForgotEmailTest:149 - ========== Forgot Email Test Started: Mobile Number With Alphabets ==========
-[2026-01-12 16:05:26] INFO  ForgotEmailTest:160 - Entering mobile number with alphabets: 98765abcde
-[2026-01-12 16:05:26] INFO  ForgotEmailTest:164 - Clicking Next button
-[2026-01-12 16:05:26] INFO  ForgotEmailTest:168 - Verifying error message 'Not a valid number'
-[2026-01-12 16:05:26] INFO  ForgotEmailTest:177 - Test passed: Correct error message displayed for mobile number with alphabets
-[2026-01-12 16:05:28] INFO  ForgotPasswordTest:306 - ========== TEST STARTED : Blank Country Validation ==========
-[2026-01-12 16:05:28] INFO  ForgotPasswordTest:311 - Switching to top frame
-[2026-01-12 16:05:28] INFO  ForgotPasswordTest:315 - Submitting security answers with missing country
-[2026-01-12 16:05:30] INFO  ForgotPasswordTest:334 - Country blank validation verified
-[2026-01-12 16:05:32] INFO  ForgotPasswordTest:344 - ========== TEST STARTED : Incorrect Security Answers ==========
-[2026-01-12 16:05:32] INFO  ForgotPasswordTest:349 - Switching to top frame
-[2026-01-12 16:05:32] INFO  ForgotPasswordTest:353 - Submitting incorrect security answers
-[2026-01-12 16:05:35] INFO  ForgotPasswordTest:373 - Incorrect security answers validation verified
+[2026-01-13 16:05:43] INFO  ForgotPasswordTest:25 - ========== TEST STARTED : Reset Password Instruction ==========
+[2026-01-13 16:05:43] INFO  ForgotPasswordTest:29 - ForgotPasswordPage initialized
+[2026-01-13 16:05:43] INFO  ForgotPasswordTest:31 - Switching to top frame
+[2026-01-13 16:05:43] INFO  ForgotPasswordTest:35 - Entering registered email
+[2026-01-13 16:05:43] INFO  ForgotPasswordTest:39 - Clicking Next button
+[2026-01-13 16:05:44] INFO  ForgotPasswordTest:43 - Clicking Forgot Password link
+[2026-01-13 16:05:44] INFO  ForgotPasswordTest:47 - Proceeding with reset password option
+[2026-01-13 16:05:45] INFO  ForgotPasswordTest:51 - Selecting Send Password Email option
+[2026-01-13 16:05:46] INFO  ForgotPasswordTest:64 - VerifyResetPasswordViaEmail
+[2026-01-13 16:05:47] INFO  ForgotPasswordTest:74 - ========== TEST STARTED : Successful Password Reset ==========
+[2026-01-13 16:05:47] INFO  ForgotPasswordTest:78 - ForgotPasswordPage initialized
+[2026-01-13 16:05:47] INFO  ForgotPasswordTest:80 - Switching to top frame
+[2026-01-13 16:05:48] INFO  ForgotPasswordTest:84 - Entering registered email
+[2026-01-13 16:05:48] INFO  ForgotPasswordTest:88 - Clicking Next button
+[2026-01-13 16:05:48] INFO  ForgotPasswordTest:92 - Navigating to Forgot Password flow
+[2026-01-13 16:05:48] INFO  ForgotPasswordTest:96 - Proceeding to reset options
+[2026-01-13 16:05:49] INFO  ForgotPasswordTest:100 - Selecting security question verification
+[2026-01-13 16:05:50] INFO  ForgotPasswordTest:104 - Entering valid security answers
+[2026-01-13 16:05:50] INFO  ForgotPasswordTest:110 - Submitting security answers
+[2026-01-13 16:05:50] INFO  ForgotPasswordTest:114 - Entering new password
+[2026-01-13 16:05:51] INFO  ForgotPasswordTest:119 - Submitting password change request
+[2026-01-13 16:05:51] INFO  ForgotPasswordTest:123 - Validating success message
+[2026-01-13 16:05:52] INFO  ForgotPasswordTest:134 - Password reset completed successfully
+[2026-01-13 16:05:54] INFO  ForgotPasswordTest:144 - ========== TEST STARTED : Missing Password Validation ==========
+[2026-01-13 16:05:54] INFO  ForgotPasswordTest:149 - Switching to top frame
+[2026-01-13 16:05:54] INFO  ForgotPasswordTest:153 - Completing security verification
+[2026-01-13 16:05:57] INFO  ForgotPasswordTest:165 - Submitting empty password fields
+[2026-01-13 16:05:57] INFO  ForgotPasswordTest:178 - Password mandatory validation verified
+[2026-01-13 16:05:59] INFO  ForgotPasswordTest:188 - ========== TEST STARTED : Password Mismatch Validation ==========
+[2026-01-13 16:05:59] INFO  ForgotPasswordTest:193 - Switching to top frame
+[2026-01-13 16:05:59] INFO  ForgotPasswordTest:197 - Navigating to password reset using security questions
+[2026-01-13 16:06:01] INFO  ForgotPasswordTest:209 - Entering mismatched passwords
+[2026-01-13 16:06:02] INFO  ForgotPasswordTest:225 - Password mismatch validation verified successfully
+[2026-01-13 16:06:04] INFO  ForgotPasswordTest:235 - ========== TEST STARTED : Blank Security Answers ==========
+[2026-01-13 16:06:04] INFO  ForgotPasswordTest:240 - Switching to top frame
+[2026-01-13 16:06:04] INFO  ForgotPasswordTest:244 - Navigating to security verification without answers
+[2026-01-13 16:06:06] INFO  ForgotPasswordTest:261 - Security answer blank validation verified
+[2026-01-13 16:06:08] INFO  ForgotPasswordTest:271 - ========== TEST STARTED : Blank City Validation ==========
+[2026-01-13 16:06:08] INFO  ForgotPasswordTest:276 - Switching to top frame
+[2026-01-13 16:06:08] INFO  ForgotPasswordTest:280 - Submitting security answers with missing city
+[2026-01-13 16:06:11] INFO  ForgotPasswordTest:298 - City blank validation verified
+[2026-01-13 16:06:12] INFO  ForgotPasswordTest:308 - ========== TEST STARTED : Blank Country Validation ==========
+[2026-01-13 16:06:12] INFO  ForgotPasswordTest:313 - Switching to top frame
+[2026-01-13 16:06:12] INFO  ForgotPasswordTest:317 - Submitting security answers with missing country
+[2026-01-13 16:06:15] INFO  ForgotPasswordTest:336 - Country blank validation verified
+[2026-01-13 16:06:17] INFO  ForgotPasswordTest:346 - ========== TEST STARTED : Incorrect Security Answers ==========
+[2026-01-13 16:06:17] INFO  ForgotPasswordTest:351 - Switching to top frame
+[2026-01-13 16:06:17] INFO  ForgotPasswordTest:355 - Submitting incorrect security answers
+[2026-01-13 16:06:19] INFO  ForgotPasswordTest:375 - Incorrect security answers validation verified

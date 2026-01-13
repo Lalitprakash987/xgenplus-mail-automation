@@ -18,7 +18,6 @@ public class ForgotPasswordPage {
 	// ✅ Constructor
 	public ForgotPasswordPage(WebDriver driver, WebDriverWait wait) {
 		this.driver = driver;
-		this.wait = wait;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		PageFactory.initElements(driver, this);
 	}
