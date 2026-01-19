@@ -1,49 +1,5 @@
-[2026-01-13 16:05:43] INFO  ForgotPasswordTest:25 - ========== TEST STARTED : Reset Password Instruction ==========
-[2026-01-13 16:05:43] INFO  ForgotPasswordTest:29 - ForgotPasswordPage initialized
-[2026-01-13 16:05:43] INFO  ForgotPasswordTest:31 - Switching to top frame
-[2026-01-13 16:05:43] INFO  ForgotPasswordTest:35 - Entering registered email
-[2026-01-13 16:05:43] INFO  ForgotPasswordTest:39 - Clicking Next button
-[2026-01-13 16:05:44] INFO  ForgotPasswordTest:43 - Clicking Forgot Password link
-[2026-01-13 16:05:44] INFO  ForgotPasswordTest:47 - Proceeding with reset password option
-[2026-01-13 16:05:45] INFO  ForgotPasswordTest:51 - Selecting Send Password Email option
-[2026-01-13 16:05:46] INFO  ForgotPasswordTest:64 - VerifyResetPasswordViaEmail
-[2026-01-13 16:05:47] INFO  ForgotPasswordTest:74 - ========== TEST STARTED : Successful Password Reset ==========
-[2026-01-13 16:05:47] INFO  ForgotPasswordTest:78 - ForgotPasswordPage initialized
-[2026-01-13 16:05:47] INFO  ForgotPasswordTest:80 - Switching to top frame
-[2026-01-13 16:05:48] INFO  ForgotPasswordTest:84 - Entering registered email
-[2026-01-13 16:05:48] INFO  ForgotPasswordTest:88 - Clicking Next button
-[2026-01-13 16:05:48] INFO  ForgotPasswordTest:92 - Navigating to Forgot Password flow
-[2026-01-13 16:05:48] INFO  ForgotPasswordTest:96 - Proceeding to reset options
-[2026-01-13 16:05:49] INFO  ForgotPasswordTest:100 - Selecting security question verification
-[2026-01-13 16:05:50] INFO  ForgotPasswordTest:104 - Entering valid security answers
-[2026-01-13 16:05:50] INFO  ForgotPasswordTest:110 - Submitting security answers
-[2026-01-13 16:05:50] INFO  ForgotPasswordTest:114 - Entering new password
-[2026-01-13 16:05:51] INFO  ForgotPasswordTest:119 - Submitting password change request
-[2026-01-13 16:05:51] INFO  ForgotPasswordTest:123 - Validating success message
-[2026-01-13 16:05:52] INFO  ForgotPasswordTest:134 - Password reset completed successfully
-[2026-01-13 16:05:54] INFO  ForgotPasswordTest:144 - ========== TEST STARTED : Missing Password Validation ==========
-[2026-01-13 16:05:54] INFO  ForgotPasswordTest:149 - Switching to top frame
-[2026-01-13 16:05:54] INFO  ForgotPasswordTest:153 - Completing security verification
-[2026-01-13 16:05:57] INFO  ForgotPasswordTest:165 - Submitting empty password fields
-[2026-01-13 16:05:57] INFO  ForgotPasswordTest:178 - Password mandatory validation verified
-[2026-01-13 16:05:59] INFO  ForgotPasswordTest:188 - ========== TEST STARTED : Password Mismatch Validation ==========
-[2026-01-13 16:05:59] INFO  ForgotPasswordTest:193 - Switching to top frame
-[2026-01-13 16:05:59] INFO  ForgotPasswordTest:197 - Navigating to password reset using security questions
-[2026-01-13 16:06:01] INFO  ForgotPasswordTest:209 - Entering mismatched passwords
-[2026-01-13 16:06:02] INFO  ForgotPasswordTest:225 - Password mismatch validation verified successfully
-[2026-01-13 16:06:04] INFO  ForgotPasswordTest:235 - ========== TEST STARTED : Blank Security Answers ==========
-[2026-01-13 16:06:04] INFO  ForgotPasswordTest:240 - Switching to top frame
-[2026-01-13 16:06:04] INFO  ForgotPasswordTest:244 - Navigating to security verification without answers
-[2026-01-13 16:06:06] INFO  ForgotPasswordTest:261 - Security answer blank validation verified
-[2026-01-13 16:06:08] INFO  ForgotPasswordTest:271 - ========== TEST STARTED : Blank City Validation ==========
-[2026-01-13 16:06:08] INFO  ForgotPasswordTest:276 - Switching to top frame
-[2026-01-13 16:06:08] INFO  ForgotPasswordTest:280 - Submitting security answers with missing city
-[2026-01-13 16:06:11] INFO  ForgotPasswordTest:298 - City blank validation verified
-[2026-01-13 16:06:12] INFO  ForgotPasswordTest:308 - ========== TEST STARTED : Blank Country Validation ==========
-[2026-01-13 16:06:12] INFO  ForgotPasswordTest:313 - Switching to top frame
-[2026-01-13 16:06:12] INFO  ForgotPasswordTest:317 - Submitting security answers with missing country
-[2026-01-13 16:06:15] INFO  ForgotPasswordTest:336 - Country blank validation verified
-[2026-01-13 16:06:17] INFO  ForgotPasswordTest:346 - ========== TEST STARTED : Incorrect Security Answers ==========
-[2026-01-13 16:06:17] INFO  ForgotPasswordTest:351 - Switching to top frame
-[2026-01-13 16:06:17] INFO  ForgotPasswordTest:355 - Submitting incorrect security answers
-[2026-01-13 16:06:19] INFO  ForgotPasswordTest:375 - Incorrect security answers validation verified
+[2026-01-19 17:48:12] INFO  ComposeMailTest:85 - Reading login credentials from test data
+[2026-01-19 17:48:12] INFO  ComposeMailTest:89 - Switching to top frame for login
+[2026-01-19 17:48:12] INFO  ComposeMailTest:93 - Logging in with valid credentials: lalit1@dil.net.in
+[2026-01-19 17:48:18] INFO  ComposeMailTest:97 - Switching to mail frame after login
+[2026-01-19 17:48:18] INFO  ComposeMailTest:100 - Closing guided tour if visible

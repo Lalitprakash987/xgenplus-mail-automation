@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-13T16:05:41 IST" name="Default suite" finished-at="2026-01-13T16:06:19 IST" duration-ms="38394">
+  <suite started-at="2026-01-19T17:48:09 IST" name="Default suite" finished-at="2026-01-19T17:48:21 IST" duration-ms="11888">
     <groups>
     </groups>
-    <test started-at="2026-01-13T16:05:41 IST" name="Default test" finished-at="2026-01-13T16:06:19 IST" duration-ms="38394">
-      <class name="com.xgenplus.tests.ForgotPasswordTest">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:41 IST" name="setupExtent" finished-at="2026-01-13T16:05:41 IST" duration-ms="156" status="PASS">
+    <test started-at="2026-01-19T17:48:09 IST" name="Default test" finished-at="2026-01-19T17:48:21 IST" duration-ms="11888">
+      <class name="com.xgenplus.tests.ComposeMailTest">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-01-19T17:48:09 IST" name="setupExtent" finished-at="2026-01-19T17:48:09 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:41 IST" name="setUp" finished-at="2026-01-13T16:05:43 IST" duration-ms="2094" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-01-19T17:48:09 IST" name="setUp" finished-at="2026-01-19T17:48:12 IST" duration-ms="2213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,208 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyResetPasswordViaEmail()[pri:1, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:43 IST" name="verifyResetPasswordViaEmail" description="Verify instruction message when reset password email option is selected" finished-at="2026-01-13T16:05:46 IST" duration-ms="2772" status="PASS">
+        <test-method signature="verifyCcBccFields()[pri:2, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-01-19T17:48:12 IST" name="verifyCcBccFields" description="Verify CC and BCC fields functionality in Compose Mail" finished-at="2026-01-19T17:48:21 IST" duration-ms="9642" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyResetPasswordViaEmail -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:46 IST" name="tearDown" finished-at="2026-01-13T16:05:46 IST" duration-ms="127" status="PASS">
+        </test-method> <!-- verifyCcBccFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-01-19T17:48:21 IST" name="tearDown" finished-at="2026-01-19T17:48:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyResetPasswordViaEmail status=SUCCESS method=ForgotPasswordTest.verifyResetPasswordViaEmail()[pri:1, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCcBccFields status=SUCCESS method=ComposeMailTest.verifyCcBccFields()[pri:2, instance:com.xgenplus.tests.ComposeMailTest@665df3c6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:46 IST" name="setUp" finished-at="2026-01-13T16:05:47 IST" duration-ms="867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySuccessfulPasswordResetUsingSecurityQuestions()[pri:2, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:47 IST" name="verifySuccessfulPasswordResetUsingSecurityQuestions" description="Verify successful password reset with valid security answers" finished-at="2026-01-13T16:05:52 IST" duration-ms="5429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySuccessfulPasswordResetUsingSecurityQuestions -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:52 IST" name="tearDown" finished-at="2026-01-13T16:05:53 IST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySuccessfulPasswordResetUsingSecurityQuestions status=SUCCESS method=ForgotPasswordTest.verifySuccessfulPasswordResetUsingSecurityQuestions()[pri:2, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:53 IST" name="setUp" finished-at="2026-01-13T16:05:54 IST" duration-ms="1276" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorWhenPasswordIsMissing()[pri:3, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:54 IST" name="verifyErrorWhenPasswordIsMissing" description="Verify error when password is not entered" finished-at="2026-01-13T16:05:57 IST" duration-ms="2931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorWhenPasswordIsMissing -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:57 IST" name="tearDown" finished-at="2026-01-13T16:05:57 IST" duration-ms="147" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorWhenPasswordIsMissing status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenPasswordIsMissing()[pri:3, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:57 IST" name="setUp" finished-at="2026-01-13T16:05:59 IST" duration-ms="1712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorForPasswordMismatch()[pri:4, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:05:59 IST" name="verifyErrorForPasswordMismatch" description="Verify error when password and confirm password do not match" finished-at="2026-01-13T16:06:02 IST" duration-ms="3688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorForPasswordMismatch -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:02 IST" name="tearDown" finished-at="2026-01-13T16:06:03 IST" duration-ms="143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorForPasswordMismatch status=SUCCESS method=ForgotPasswordTest.verifyErrorForPasswordMismatch()[pri:4, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:03 IST" name="setUp" finished-at="2026-01-13T16:06:04 IST" duration-ms="1189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorWhenSecurityAnswersAreBlank()[pri:5, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:04 IST" name="verifyErrorWhenSecurityAnswersAreBlank" description="Verify error when security answers are skipped" finished-at="2026-01-13T16:06:06 IST" duration-ms="2478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorWhenSecurityAnswersAreBlank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:06 IST" name="tearDown" finished-at="2026-01-13T16:06:06 IST" duration-ms="134" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorWhenSecurityAnswersAreBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenSecurityAnswersAreBlank()[pri:5, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:06 IST" name="setUp" finished-at="2026-01-13T16:06:08 IST" duration-ms="1761" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorWhenCityNameIsBlank()[pri:6, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:08 IST" name="verifyErrorWhenCityNameIsBlank" description="Verify error when city name is not provided" finished-at="2026-01-13T16:06:11 IST" duration-ms="2699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorWhenCityNameIsBlank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:11 IST" name="tearDown" finished-at="2026-01-13T16:06:11 IST" duration-ms="119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorWhenCityNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenCityNameIsBlank()[pri:6, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:11 IST" name="setUp" finished-at="2026-01-13T16:06:12 IST" duration-ms="1212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorWhenCountryNameIsBlank()[pri:7, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:12 IST" name="verifyErrorWhenCountryNameIsBlank" description="Verify error when country name is not provided" finished-at="2026-01-13T16:06:15 IST" duration-ms="2606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorWhenCountryNameIsBlank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:15 IST" name="tearDown" finished-at="2026-01-13T16:06:15 IST" duration-ms="373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorWhenCountryNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenCountryNameIsBlank()[pri:7, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:15 IST" name="setUp" finished-at="2026-01-13T16:06:17 IST" duration-ms="1528" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorForIncorrectSecurityAnswers()[pri:8, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:17 IST" name="verifyErrorForIncorrectSecurityAnswers" description="Verify error when incorrect security answers are provided" finished-at="2026-01-13T16:06:19 IST" duration-ms="2680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorForIncorrectSecurityAnswers -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:19 IST" name="tearDown" finished-at="2026-01-13T16:06:19 IST" duration-ms="108" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorForIncorrectSecurityAnswers status=SUCCESS method=ForgotPasswordTest.verifyErrorForIncorrectSecurityAnswers()[pri:8, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@478ee483]" started-at="2026-01-13T16:06:19 IST" name="closeReport" finished-at="2026-01-13T16:06:20 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-01-19T17:48:21 IST" name="closeReport" finished-at="2026-01-19T17:48:22 IST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
-      </class> <!-- com.xgenplus.tests.ForgotPasswordTest -->
+      </class> <!-- com.xgenplus.tests.ComposeMailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

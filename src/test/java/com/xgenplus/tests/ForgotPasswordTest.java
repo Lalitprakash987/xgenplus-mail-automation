@@ -276,9 +276,9 @@ public class ForgotPasswordTest extends BaseClass {
 		log.info("Switching to top frame");
 		test.info("Step 1: Switch to top frame");
 		driver.switchTo().frame("topFrame");
-
 		log.info("Submitting security answers with missing city");
-		test.info("Step 2: Enter pet name only and submit");
+		test.info("Step 2: Enter pet name only and submit");		
+		
 		forgotPassword.enterEmail(TestDataReader.getData("validEmail"));
 		forgotPassword.clickNextButton();
 		forgotPassword.clickForgotPasswordLink();

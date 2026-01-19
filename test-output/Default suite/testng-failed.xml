@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.xgenplus.tests.LoginTest">
+      <class name="com.xgenplus.tests.ComposeMailTest">
         <methods>
           <include name="closeReport"/>
           <include name="tearDown"/>
           <include name="setupExtent"/>
           <include name="setUp"/>
-          <include name="invalidEmailLoginTest"/>
+          <include name="verifyCcBccFields"/>
         </methods>
-      </class> <!-- com.xgenplus.tests.LoginTest -->
+      </class> <!-- com.xgenplus.tests.ComposeMailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

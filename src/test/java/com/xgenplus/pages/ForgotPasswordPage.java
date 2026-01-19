@@ -98,7 +98,11 @@ public class ForgotPasswordPage {
 	}
 
 	public void clickForgotPasswordLink() {
-		waitAndClick(forgotPasswordLink);
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(forgotPasswordLink)).click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", forgotPasswordLink);
+		}
 	}
 
 	public void clickResetPasswordNext() {
@@ -108,7 +112,7 @@ public class ForgotPasswordPage {
 	public void clickSendPasswordEmail() {
 		waitAndClick(sendPasswordEmailBtn);
 	}
-	
+
 	public void clickSendDifferentVerificationOption() {
 		waitAndClick(sendDifferentVerificationOption);
 	}

@@ -4,30 +4,14 @@
   <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.xgenplus.tests.LoginTest">
-        <methods>
-          <include name="closeReport"/>
-          <include name="validLoginTest"/>
-          <include name="invalidPasswordLoginTest"/>
-          <include name="setupExtent"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="invalidEmailLoginTest"/>
-        </methods>
-      </class> <!-- com.xgenplus.tests.LoginTest -->
       <class name="com.xgenplus.tests.ForgotPasswordTest">
         <methods>
           <include name="verifyErrorWhenCountryNameIsBlank"/>
           <include name="closeReport"/>
           <include name="verifySuccessfulPasswordResetUsingSecurityQuestions"/>
-          <include name="verifyErrorWhenPasswordIsMissing"/>
           <include name="tearDown"/>
           <include name="setupExtent"/>
           <include name="setUp"/>
-          <include name="verifyErrorWhenSecurityAnswersAreBlank"/>
-          <include name="verifyErrorWhenCityNameIsBlank"/>
-          <include name="verifyErrorForPasswordMismatch"/>
-          <include name="verifyResetPasswordViaEmail"/>
           <include name="verifyErrorForIncorrectSecurityAnswers"/>
         </methods>
       </class> <!-- com.xgenplus.tests.ForgotPasswordTest -->
