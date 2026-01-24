@@ -9,7 +9,7 @@
           <include name="tearDown"/>
           <include name="setupExtent"/>
           <include name="setUp"/>
-          <include name="verifyCcBccFields"/>
+          <include name="verifyComposedEmailSavedInDraftFolder"/>
         </methods>
       </class> <!-- com.xgenplus.tests.ComposeMailTest -->
     </classes>

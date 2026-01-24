@@ -1,5 +1,1 @@
-[2026-01-19 17:48:12] INFO  ComposeMailTest:85 - Reading login credentials from test data
-[2026-01-19 17:48:12] INFO  ComposeMailTest:89 - Switching to top frame for login
-[2026-01-19 17:48:12] INFO  ComposeMailTest:93 - Logging in with valid credentials: lalit1@dil.net.in
-[2026-01-19 17:48:18] INFO  ComposeMailTest:97 - Switching to mail frame after login
-[2026-01-19 17:48:18] INFO  ComposeMailTest:100 - Closing guided tour if visible
+[2026-01-24 12:30:34] INFO  ComposeMailTest:292 - ========== Verify Email Saved in Draft Folder Started ==========

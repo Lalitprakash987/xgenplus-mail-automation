@@ -24,11 +24,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.xgenplus.pages.LoginPage;
 import com.xgenplus.utils.ConfigReader;
+import com.xgenplus.utils.TestDataReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
@@ -49,7 +52,7 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 
-		//	options.addArguments("--headless=new");
+	//		options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
@@ -66,7 +69,7 @@ public class BaseClass {
 
 		driver.manage().window().maximize();
 		driver.get(ConfigReader.get("url"));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 	}
 
@@ -105,7 +108,7 @@ public class BaseClass {
 		}
 
 		if (driver != null) {
-		//	driver.quit();
+		//	 driver.quit();
 
 		}
 
@@ -114,6 +117,23 @@ public class BaseClass {
 	@AfterSuite
 	public void closeReport() {
 		extent.flush();
+	}
+
+	protected void loginToMail() {
+
+		String email = TestDataReader.getData("validEmail");
+		String password = TestDataReader.getData("validPassword");
+
+		// top frame for login
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame("topFrame");
+
+		LoginPage loginPage = new LoginPage(driver, wait);
+		loginPage.login(email, password);
+
+		// switch to mail frame
+		loginPage.switchToMailFrame();
+		loginPage.closeGuidedTourIfVisible();
 	}
 
 }
