@@ -289,7 +289,7 @@ public class ComposeMailTest extends BaseClass {
 		test = extent.createTest("Compose Mail | Verify Email Saved in Draft Folder",
 				"Check that the composed email is saved in Draft folder with with correct details");
 
-		log.info("========== Verify Email Saved in Draft Folder Started ==========");
+		log.info("========== Verify Email Saved in Draft Folder ==========");
 
 		loginToMail();
 		// Fetch test data
@@ -321,9 +321,11 @@ public class ComposeMailTest extends BaseClass {
 		test.pass("Draft saved successfully");
 		composePage.clickComposeMailClosebtn();
 		composePage.clickDraftText();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		composePage.switchToSentMailListFrame();
+		Thread.sleep(4000);
 		composePage.clickDraftRowId1Text();
+		Thread.sleep(15000);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("FB");
 		driver.switchTo().frame("FM");

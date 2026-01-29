@@ -1,7 +1,10 @@
 package com.xgenplus.pages;
 
 import java.time.Duration;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -96,7 +99,7 @@ public class ComposeMailPage {
 
 	@FindBy(id = "MailRowId1")
 	private WebElement MailRowId1Text;
-	
+
 	@FindBy(xpath = "//div[@class='guided-tour-step-tooltip guided-tour-arrow-top']//span[@title='End tour']//*[name()='svg']")
 	private WebElement GuidedTourIconbtn;
 
@@ -120,13 +123,13 @@ public class ComposeMailPage {
 	@FindBy(id = "MailRowId1")
 	private WebElement DraftMailRowId1Text;
 
-	@FindBy(xpath = "//input[@id='txtMailToNew0']")
+	@FindBy(xpath = "//span[contains(@class,'txtMailToSpanall-mail-to')]")
 	private WebElement DraftToMail;
 
-	@FindBy(id = "TxtMailToCCNew0")
+	@FindBy(xpath = "//span[contains(@class,'txtMailToSpanall-mail-cc_0')]")
 	private WebElement DraftCcMail;
 
-	@FindBy(id = "inputBccDiv0")
+	@FindBy(xpath = "//span[contains(@class,'txtMailToSpanall-mail-bcc_0')]")
 	private WebElement DraftBccMail;
 
 	@FindBy(id = "labelSubject_0")
@@ -419,45 +422,64 @@ public class ComposeMailPage {
 			return false;
 		}
 	}
-	
+
 	public void waitForSentMailToLoad() {
-	    wait.until(ExpectedConditions.visibilityOf(MailRowId1Text));
-	}
-	
-	public void switchToSentMailListFrame() {
-	    driver.switchTo().defaultContent();
-	    driver.switchTo().frame("FB");
-	    driver.switchTo().frame("FM");
-	    driver.switchTo().frame("MC");
-	}
-	public void switchToSentMailViewFrame() {
-	    driver.switchTo().defaultContent();
-	    driver.switchTo().frame("FB");
-	    driver.switchTo().frame("FM");
-	    driver.switchTo().frame("VC");
-	    driver.switchTo().frame("ifViewMail1");
+		wait.until(ExpectedConditions.visibilityOf(MailRowId1Text));
 	}
 
-	// -------- Get Draft Fields --------
+	public void switchToSentMailListFrame() {
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame("FB");
+		driver.switchTo().frame("FM");
+		driver.switchTo().frame("MC");
+	}
+
+	public void switchToSentMailViewFrame() {
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame("FB");
+		driver.switchTo().frame("FM");
+		driver.switchTo().frame("VC");
+		driver.switchTo().frame("ifViewMail1");
+	}
+
+	// --------Draft Mail Methods --------
+
+	private String extractEmailFromElement(WebElement element) {
+		try {
+			// Wait until element has some text (non-empty)
+			wait.until(driver -> {
+				String text = (String) ((JavascriptExecutor) driver).executeScript("return arguments[0].textContent;",
+						element);
+				return text != null && !text.trim().isEmpty();
+			});
+
+			String fullText = (String) ((JavascriptExecutor) driver).executeScript("return arguments[0].textContent;",
+					element);
+
+			Matcher matcher = Pattern.compile("[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}").matcher(fullText);
+			if (matcher.find())
+				return matcher.group().trim();
+		} catch (Exception e) {
+			return "";
+		}
+		return "";
+	}
 
 	public String getDraftToMail() {
-		waitForVisible(DraftToMail);
-		return DraftToMail.getAttribute("value").trim();
+		return extractEmailFromElement(DraftToMail);
 	}
 
 	public String getDraftCcMail() {
-		waitForVisible(DraftCcMail);
-		return DraftCcMail.getAttribute("value").trim();
+		return extractEmailFromElement(DraftCcMail);
 	}
 
 	public String getDraftBccMail() {
-		waitForVisible(DraftBccMail);
-		return DraftBccMail.getAttribute("value").trim();
+		return extractEmailFromElement(DraftBccMail);
 	}
 
 	public String getDraftMailSubject() {
 		waitForVisible(DraftMailSubject);
-		return DraftMailSubject.getText().trim();
+		return DraftMailSubject.getAttribute("value").trim();
 	}
 
 	public String getDraftMailBody() {
