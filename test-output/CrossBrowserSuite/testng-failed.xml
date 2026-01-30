@@ -11,18 +11,8 @@
           <include name="setupExtent"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyComposedEmailSavedInDraftFolder"/>
         </methods>
       </class> <!-- com.xgenplus.tests.ComposeMailTest -->
-      <class name="com.xgenplus.tests.ForgotPasswordTest">
-        <methods>
-          <include name="closeReport"/>
-          <include name="tearDown"/>
-          <include name="setupExtent"/>
-          <include name="setUp"/>
-          <include name="verifyErrorWhenSecurityAnswersAreBlank"/>
-        </methods>
-      </class> <!-- com.xgenplus.tests.ForgotPasswordTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserSuite] -->

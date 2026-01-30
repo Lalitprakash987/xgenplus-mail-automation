@@ -6,10 +6,10 @@
       <class name="com.xgenplus.tests.ComposeMailTest">
         <methods>
           <include name="closeReport"/>
+          <include name="verifySendMailWithAllFields"/>
           <include name="tearDown"/>
           <include name="setupExtent"/>
           <include name="setUp"/>
-          <include name="verifyComposedEmailSavedInDraftFolder"/>
         </methods>
       </class> <!-- com.xgenplus.tests.ComposeMailTest -->
     </classes>

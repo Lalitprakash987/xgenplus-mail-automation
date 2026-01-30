@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-CrossBrowserSuite" class="navigator-link">
+              <span class="suite-name border-failed">CrossBrowserSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-313652781\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-CrossBrowserSuite" class="navigator-link ">
+                    <span>C:\Users\HP\eclipse-workspace\xgenplus-mail-automation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-CrossBrowserSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-CrossBrowserSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-CrossBrowserSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-CrossBrowserSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-CrossBrowserSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-CrossBrowserSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,120 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="hide-methods failed suite-CrossBrowserSuite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowserSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods failed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods failed suite-CrossBrowserSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossBrowserSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ComposeMailTest" class="method navigator-link" hash-for-method="verifyComposeEmailInSentFolderWithCorrectContent">verifyComposeEmailInSentFolderWithCorrectContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowserSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="hide-methods passed suite-CrossBrowserSuite"> (hide)</a> <!-- hide-methods passed suite-CrossBrowserSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods passed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods passed suite-CrossBrowserSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-CrossBrowserSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.xgenplus.tests.ComposeMailTest" class="method navigator-link" hash-for-method="verifyComposedEmailSavedInDraftFolder">verifyComposedEmailSavedInDraftFolder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="invalidEmailLoginTest">invalidEmailLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="invalidPasswordLoginTest">invalidPasswordLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithAlphabetsInMobile">testForgotEmailWithAlphabetsInMobile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithInvalidMobileNumber">testForgotEmailWithInvalidMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithLongMobileNumber">testForgotEmailWithLongMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotEmailTest" class="method navigator-link" hash-for-method="testForgotEmailWithoutMobileNumber">testForgotEmailWithoutMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ComposeMailTest" class="method navigator-link" hash-for-method="verifyComposeWindowOpens">verifyComposeWindowOpens</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ComposeMailTest" class="method navigator-link" hash-for-method="verifyComposedEmailSavedInDraftFolder">verifyComposedEmailSavedInDraftFolder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorForIncorrectSecurityAnswers">verifyErrorForIncorrectSecurityAnswers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorForPasswordMismatch">verifyErrorForPasswordMismatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorWhenCityNameIsBlank">verifyErrorWhenCityNameIsBlank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorWhenCountryNameIsBlank">verifyErrorWhenCountryNameIsBlank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorWhenPasswordIsMissing">verifyErrorWhenPasswordIsMissing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyErrorWhenSecurityAnswersAreBlank">verifyErrorWhenSecurityAnswersAreBlank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifyResetPasswordViaEmail">verifyResetPasswordViaEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ComposeMailTest" class="method navigator-link" hash-for-method="verifySendMailWithAllFields">verifySendMailWithAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.xgenplus.tests.ForgotPasswordTest" class="method navigator-link" hash-for-method="verifySuccessfulPasswordResetUsingSecurityQuestions">verifySuccessfulPasswordResetUsingSecurityQuestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowserSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,13 +216,121 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-CrossBrowserSuite" class="panel CrossBrowserSuite">
+          <div class="suite-CrossBrowserSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.xgenplus.tests.ComposeMailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyComposeEmailInSentFolderWithCorrectContent">
+                  </a> <!-- verifyComposeEmailInSentFolderWithCorrectContent -->
+                  <span class="method-name">verifyComposeEmailInSentFolderWithCorrectContent</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]&quot;}
+  (Session info: chrome=144.0.7559.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7fdf15dc5f4e808af6367a7b778ab17c, findElement {using=xpath, value=//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56959}, goog:processID: 10804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56959/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fdf15dc5f4e808af6367a7b778ab17c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:530)
+	at com.xgenplus.pages.ComposeMailPage.waitAndClick(ComposeMailPage.java:161)
+	at com.xgenplus.pages.ComposeMailPage.clickGuidedTourIconbtn(ComposeMailPage.java:356)
+	at com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent(ComposeMailTest.java:266)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify composed email is present in Sent folder with correct details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserSuite-class-failed -->
+          <div class="suite-CrossBrowserSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xgenplus.tests.ForgotEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithAlphabetsInMobile">
+                  </a> <!-- testForgotEmailWithAlphabetsInMobile -->
+                  <span class="method-name">testForgotEmailWithAlphabetsInMobile</span>
+                  <em>
+(Verify error message for mobile number containing alphabets)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithInvalidMobileNumber">
+                  </a> <!-- testForgotEmailWithInvalidMobileNumber -->
+                  <span class="method-name">testForgotEmailWithInvalidMobileNumber</span>
+                  <em>
+(Verify error message for non-existent mobile number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithLongMobileNumber">
+                  </a> <!-- testForgotEmailWithLongMobileNumber -->
+                  <span class="method-name">testForgotEmailWithLongMobileNumber</span>
+                  <em>
+(Verify error message for mobile number exceeding 10 digits)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotEmailWithoutMobileNumber">
+                  </a> <!-- testForgotEmailWithoutMobileNumber -->
+                  <span class="method-name">testForgotEmailWithoutMobileNumber</span>
+                  <em>
+(Verify error message when mobile number is not provided)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+          <div class="suite-CrossBrowserSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.xgenplus.tests.ComposeMailTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyComposeWindowOpens">
+                  </a> <!-- verifyComposeWindowOpens -->
+                  <span class="method-name">verifyComposeWindowOpens</span>
+                  <em>
+(Verify Compose Mail window opens with all mandatory fields and actions)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyComposedEmailSavedInDraftFolder">
@@ -133,130 +340,572 @@
 (Verify composed email is saved in Draft folder with correct details)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySendMailWithAllFields">
+                  </a> <!-- verifySendMailWithAllFields -->
+                  <span class="method-name">verifySendMailWithAllFields</span>
+                  <em>
+(Verify Send Mail with To, Cc, Bcc, Subject, Body, Attachment and Inline Image)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+          <div class="suite-CrossBrowserSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xgenplus.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailLoginTest">
+                  </a> <!-- invalidEmailLoginTest -->
+                  <span class="method-name">invalidEmailLoginTest</span>
+                  <em>
+(Verify login with invalid email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordLoginTest">
+                  </a> <!-- invalidPasswordLoginTest -->
+                  <span class="method-name">invalidPasswordLoginTest</span>
+                  <em>
+(Verify login with valid email with invaild password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                  <em>
+(Verify login with valid credentials using URL validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+          <div class="suite-CrossBrowserSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xgenplus.tests.ForgotPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorForIncorrectSecurityAnswers">
+                  </a> <!-- verifyErrorForIncorrectSecurityAnswers -->
+                  <span class="method-name">verifyErrorForIncorrectSecurityAnswers</span>
+                  <em>
+(Verify error when incorrect security answers are provided)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorForPasswordMismatch">
+                  </a> <!-- verifyErrorForPasswordMismatch -->
+                  <span class="method-name">verifyErrorForPasswordMismatch</span>
+                  <em>
+(Verify error when password and confirm password do not match)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorWhenCityNameIsBlank">
+                  </a> <!-- verifyErrorWhenCityNameIsBlank -->
+                  <span class="method-name">verifyErrorWhenCityNameIsBlank</span>
+                  <em>
+(Verify error when city name is not provided)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorWhenCountryNameIsBlank">
+                  </a> <!-- verifyErrorWhenCountryNameIsBlank -->
+                  <span class="method-name">verifyErrorWhenCountryNameIsBlank</span>
+                  <em>
+(Verify error when country name is not provided)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorWhenPasswordIsMissing">
+                  </a> <!-- verifyErrorWhenPasswordIsMissing -->
+                  <span class="method-name">verifyErrorWhenPasswordIsMissing</span>
+                  <em>
+(Verify error when password is not entered)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorWhenSecurityAnswersAreBlank">
+                  </a> <!-- verifyErrorWhenSecurityAnswersAreBlank -->
+                  <span class="method-name">verifyErrorWhenSecurityAnswersAreBlank</span>
+                  <em>
+(Verify error when security answers are skipped)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetPasswordViaEmail">
+                  </a> <!-- verifyResetPasswordViaEmail -->
+                  <span class="method-name">verifyResetPasswordViaEmail</span>
+                  <em>
+(Verify instruction message when reset password email option is selected)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulPasswordResetUsingSecurityQuestions">
+                  </a> <!-- verifySuccessfulPasswordResetUsingSecurityQuestions -->
+                  <span class="method-name">verifySuccessfulPasswordResetUsingSecurityQuestions</span>
+                  <em>
+(Verify successful password reset with valid security answers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserSuite-class-passed -->
+        </div> <!-- panel CrossBrowserSuite -->
+        <div panel-name="test-xml-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-313652781\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\eclipse-workspace\xgenplus-mail-automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;CrossBrowserSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.xgenplus.tests.ComposeMailTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyComposedEmailSavedInDraftFolder&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.xgenplus.tests.ComposeMailTest --&gt;
+      &lt;class name=&quot;com.xgenplus.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.xgenplus.tests.ForgotEmailTest&quot;/&gt;
+      &lt;class name=&quot;com.xgenplus.tests.ForgotPasswordTest&quot;/&gt;
+      &lt;class name=&quot;com.xgenplus.tests.ComposeMailTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowserSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">ChromeTest (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_CrossBrowserSuite');
+function tableData_CrossBrowserSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyComposedEmailSavedInDraftFolder')
+data.setCell(0, 1, 'verifyComposeEmailInSentFolderWithCorrectContent')
 data.setCell(0, 2, 'com.xgenplus.tests.ComposeMailTest')
-data.setCell(0, 3, 42097);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 96032);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySendMailWithAllFields')
+data.setCell(1, 2, 'com.xgenplus.tests.ComposeMailTest')
+data.setCell(1, 3, 57671);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyComposedEmailSavedInDraftFolder')
+data.setCell(2, 2, 'com.xgenplus.tests.ComposeMailTest')
+data.setCell(2, 3, 41053);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyComposeWindowOpens')
+data.setCell(3, 2, 'com.xgenplus.tests.ComposeMailTest')
+data.setCell(3, 3, 14937);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validLoginTest')
+data.setCell(4, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(4, 3, 6582);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySuccessfulPasswordResetUsingSecurityQuestions')
+data.setCell(5, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(5, 3, 4160);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyErrorForPasswordMismatch')
+data.setCell(6, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(6, 3, 3558);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyErrorWhenPasswordIsMissing')
+data.setCell(7, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(7, 3, 3347);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyErrorWhenCityNameIsBlank')
+data.setCell(8, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(8, 3, 2693);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyErrorForIncorrectSecurityAnswers')
+data.setCell(9, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(9, 3, 2633);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyResetPasswordViaEmail')
+data.setCell(10, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(10, 3, 2578);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyErrorWhenCountryNameIsBlank')
+data.setCell(11, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(11, 3, 2504);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyErrorWhenSecurityAnswersAreBlank')
+data.setCell(12, 2, 'com.xgenplus.tests.ForgotPasswordTest')
+data.setCell(12, 3, 2295);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'invalidPasswordLoginTest')
+data.setCell(13, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(13, 3, 1153);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testForgotEmailWithLongMobileNumber')
+data.setCell(14, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(14, 3, 1149);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testForgotEmailWithInvalidMobileNumber')
+data.setCell(15, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(15, 3, 1069);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testForgotEmailWithoutMobileNumber')
+data.setCell(16, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(16, 3, 1046);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testForgotEmailWithAlphabetsInMobile')
+data.setCell(17, 2, 'com.xgenplus.tests.ForgotEmailTest')
+data.setCell(17, 3, 680);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'invalidEmailLoginTest')
+data.setCell(18, 2, 'com.xgenplus.tests.LoginTest')
+data.setCell(18, 3, 306);
+window.suiteTableData['CrossBrowserSuite']= { tableData: data, tableDiv: 'times-div-CrossBrowserSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-CrossBrowserSuite">
+              </div> <!-- times-div-CrossBrowserSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for CrossBrowserSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.xgenplus.tests.ForgotEmailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">setupExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.xgenplus.tests.ComposeMailTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyComposeWindowOpens</span>
+                <span class="ignored-method-name">closeReport</span>
                 <br/>
-                <span class="ignored-method-name">verifySendMailWithAllFields</span>
+                <span class="ignored-method-name">setupExtent</span>
                 <br/>
-                <span class="ignored-method-name">verifyComposeEmailInSentFolderWithCorrectContent</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.xgenplus.tests.ForgotPasswordTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupExtent</span>
+                <br/>
+                <span class="ignored-method-name">closeReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-CrossBrowserSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.xgenplus.tests.ComposeMailTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.xgenplus.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">192 ms</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">2051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:1, instance:com...)</span>
+                <span class="method-start">8636 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">8855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailLoginTest</span>
+                <span class="method-start">10542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidEmailLoginTest status=SUCCESS method=LoginTest.invalidEmailLoginTest()[pri:2...)</span>
+                <span class="method-start">10849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">10957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordLoginTest</span>
+                <span class="method-start">13454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidPasswordLoginTest status=SUCCESS method=LoginTest.invalidPasswordLoginTest()...)</span>
+                <span class="method-start">14608 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.ForgotEmailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">14715 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithoutMobileNumber</span>
+                <span class="method-start">17552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithoutMobileNumber status=SUCCESS method=ForgotEmailTest.testForgot...)</span>
+                <span class="method-start">18599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">18710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithInvalidMobileNumber</span>
+                <span class="method-start">19411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithInvalidMobileNumber status=SUCCESS method=ForgotEmailTest.testFo...)</span>
+                <span class="method-start">20481 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">20600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithLongMobileNumber</span>
+                <span class="method-start">21435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithLongMobileNumber status=SUCCESS method=ForgotEmailTest.testForgo...)</span>
+                <span class="method-start">22585 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">22690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotEmailWithAlphabetsInMobile</span>
+                <span class="method-start">24928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testForgotEmailWithAlphabetsInMobile status=SUCCESS method=ForgotEmailTest.testForg...)</span>
+                <span class="method-start">25609 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.ForgotPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">25726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetPasswordViaEmail</span>
+                <span class="method-start">26924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyResetPasswordViaEmail status=SUCCESS method=ForgotPasswordTest.verifyResetPas...)</span>
+                <span class="method-start">29503 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">29659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulPasswordResetUsingSecurityQuestions</span>
+                <span class="method-start">30798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySuccessfulPasswordResetUsingSecurityQuestions status=SUCCESS method=ForgotPas...)</span>
+                <span class="method-start">34959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">35305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorWhenPasswordIsMissing</span>
+                <span class="method-start">36453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorWhenPasswordIsMissing status=SUCCESS method=ForgotPasswordTest.verifyErr...)</span>
+                <span class="method-start">39800 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">39963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorForPasswordMismatch</span>
+                <span class="method-start">41139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorForPasswordMismatch status=SUCCESS method=ForgotPasswordTest.verifyError...)</span>
+                <span class="method-start">44697 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">44921 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorWhenSecurityAnswersAreBlank</span>
+                <span class="method-start">46045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorWhenSecurityAnswersAreBlank status=SUCCESS method=ForgotPasswordTest.ver...)</span>
+                <span class="method-start">48341 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">48451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorWhenCityNameIsBlank</span>
+                <span class="method-start">49221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorWhenCityNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyError...)</span>
+                <span class="method-start">51914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">52035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorWhenCountryNameIsBlank</span>
+                <span class="method-start">53243 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorWhenCountryNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyEr...)</span>
+                <span class="method-start">55748 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">55872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorForIncorrectSecurityAnswers</span>
+                <span class="method-start">56961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyErrorForIncorrectSecurityAnswers status=SUCCESS method=ForgotPasswordTest.ver...)</span>
+                <span class="method-start">59595 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.ComposeMailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">59993 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyComposeWindowOpens</span>
+                <span class="method-start">61152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyComposeWindowOpens status=SUCCESS method=ComposeMailTest.verifyComposeWindowO...)</span>
+                <span class="method-start">76090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">76233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySendMailWithAllFields</span>
+                <span class="method-start">77013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySendMailWithAllFields status=SUCCESS method=ComposeMailTest.verifySendMailWit...)</span>
+                <span class="method-start">134684 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">134833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyComposeEmailInSentFolderWithCorrectContent</span>
+                <span class="method-start">136015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyComposeEmailInSentFolderWithCorrectContent status=FAILURE method=ComposeMailT...)</span>
+                <span class="method-start">232048 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">232301 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyComposedEmailSavedInDraftFolder</span>
-                <span class="method-start">4502 ms</span>
+                <span class="method-start">235270 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyComposedEmailSavedInDraftFolder status=SUCCESS method=ComposeMailTest.verifyC...)</span>
-                <span class="method-start">46601 ms</span>
+                <span class="method-start">276323 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xgenplus.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">46616 ms</span>
+                <span class="method-start">276541 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
