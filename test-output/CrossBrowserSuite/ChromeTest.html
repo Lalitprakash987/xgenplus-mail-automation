@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 30 16:35:32 IST 2026</td>
+<td>Started on:</td><td>Mon Feb 02 11:01:55 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>276 seconds (276354 ms)</td>
+<tr><td>Total time:</td><td>242 seconds (242301 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,120 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent()'><b>verifyComposeEmailInSentFolderWithCorrectContent</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify composed email is present in Sent folder with correct details</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]&quot;}
-  (Session info: chrome=144.0.7559.109)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fdf15dc5f4e808af6367a7b778ab17c, findElement {using=xpath, value=//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56959}, goog:processID: 10804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56959/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7fdf15dc5f4e808af6367a7b778ab17c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:530)
-	at com.xgenplus.pages.ComposeMailPage.waitAndClick(ComposeMailPage.java:161)
-	at com.xgenplus.pages.ComposeMailPage.clickGuidedTourIconbtn(ComposeMailPage.java:356)
-	at com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent(ComposeMailTest.java:266)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1740585276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1740585276'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]&quot;}
-  (Session info: chrome=144.0.7559.109)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fdf15dc5f4e808af6367a7b778ab17c, findElement {using=xpath, value=//div[@class=&apos;guided-tour-step-tooltip guided-tour-arrow-top&apos;]//span[@title=&apos;End tour&apos;]//*[name()=&apos;svg&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56959}, goog:processID: 10804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56959/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7fdf15dc5f4e808af6367a7b778ab17c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:530)
-	at com.xgenplus.pages.ComposeMailPage.waitAndClick(ComposeMailPage.java:161)
-	at com.xgenplus.pages.ComposeMailPage.clickGuidedTourIconbtn(ComposeMailPage.java:356)
-	at com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent(ComposeMailTest.java:266)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>96</td>
-<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -190,80 +76,20 @@ Session ID: 7fdf15dc5f4e808af6367a7b778ab17c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifySuccessfulPasswordResetUsingSecurityQuestions()'><b>verifySuccessfulPasswordResetUsingSecurityQuestions</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify successful password reset with valid security answers</td>
-<td></td>
-<td>4</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithLongMobileNumber()'><b>testForgotEmailWithLongMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number exceeding 10 digits</td>
-<td></td>
-<td>1</td>
-<td>com.xgenplus.tests.ForgotEmailTest@7fc6de5b</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithoutMobileNumber()'><b>testForgotEmailWithoutMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message when mobile number is not provided</td>
-<td></td>
-<td>1</td>
-<td>com.xgenplus.tests.ForgotEmailTest@7fc6de5b</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ComposeMailTest.verifyComposedEmailSavedInDraftFolder()'><b>verifyComposedEmailSavedInDraftFolder</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify composed email is saved in Draft folder with correct details</td>
-<td></td>
-<td>41</td>
-<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
-<tr>
-<td title='com.xgenplus.tests.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with valid credentials using URL validation</td>
-<td></td>
-<td>6</td>
-<td>com.xgenplus.tests.LoginTest@2a8d39c4</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenSecurityAnswersAreBlank()'><b>verifyErrorWhenSecurityAnswersAreBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when security answers are skipped</td>
-<td></td>
-<td>2</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ComposeMailTest.verifyComposeWindowOpens()'><b>verifyComposeWindowOpens</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify Compose Mail window opens with all mandatory fields and actions</td>
-<td></td>
-<td>14</td>
-<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ComposeMailTest.verifySendMailWithAllFields()'><b>verifySendMailWithAllFields</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify Send Mail with To, Cc, Bcc, Subject, Body, Attachment and Inline Image</td>
-<td></td>
-<td>57</td>
-<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenPasswordIsMissing()'><b>verifyErrorWhenPasswordIsMissing</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password is not entered</td>
-<td></td>
-<td>3</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
 <td title='com.xgenplus.tests.LoginTest.invalidEmailLoginTest()'><b>invalidEmailLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with invalid email</td>
 <td></td>
 <td>0</td>
 <td>com.xgenplus.tests.LoginTest@2a8d39c4</td></tr>
 <tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyResetPasswordViaEmail()'><b>verifyResetPasswordViaEmail</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify instruction message when reset password email option is selected</td>
+<td title='com.xgenplus.tests.ComposeMailTest.verifyComposedEmailSavedInDraftFolder()'><b>verifyComposedEmailSavedInDraftFolder</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify composed email is saved in Draft folder with correct details</td>
 <td></td>
-<td>2</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<td>47</td>
+<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
 <tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForPasswordMismatch()'><b>verifyErrorForPasswordMismatch</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password and confirm password do not match</td>
+<td title='com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent()'><b>verifyComposeEmailInSentFolderWithCorrectContent</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify composed email is present in Sent folder with correct details</td>
 <td></td>
-<td>3</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCityNameIsBlank()'><b>verifyErrorWhenCityNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when city name is not provided</td>
-<td></td>
-<td>2</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCountryNameIsBlank()'><b>verifyErrorWhenCountryNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when country name is not provided</td>
-<td></td>
-<td>2</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
-<tr>
-<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForIncorrectSecurityAnswers()'><b>verifyErrorForIncorrectSecurityAnswers</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when incorrect security answers are provided</td>
-<td></td>
-<td>2</td>
-<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<td>27</td>
+<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
 <tr>
 <td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithAlphabetsInMobile()'><b>testForgotEmailWithAlphabetsInMobile</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number containing alphabets</td>
 <td></td>
@@ -275,10 +101,75 @@ Session ID: 7fdf15dc5f4e808af6367a7b778ab17c
 <td>1</td>
 <td>com.xgenplus.tests.LoginTest@2a8d39c4</td></tr>
 <tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCountryNameIsBlank()'><b>verifyErrorWhenCountryNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when country name is not provided</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ComposeMailTest.verifySendMailWithAllFields()'><b>verifySendMailWithAllFields</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify Send Mail with To, Cc, Bcc, Subject, Body, Attachment and Inline Image</td>
+<td></td>
+<td>70</td>
+<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenPasswordIsMissing()'><b>verifyErrorWhenPasswordIsMissing</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password is not entered</td>
+<td></td>
+<td>3</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ComposeMailTest.verifyComposeWindowOpens()'><b>verifyComposeWindowOpens</b><br>Test class: com.xgenplus.tests.ComposeMailTest<br>Test method: Verify Compose Mail window opens with all mandatory fields and actions</td>
+<td></td>
+<td>8</td>
+<td>com.xgenplus.tests.ComposeMailTest@607fbe09</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForPasswordMismatch()'><b>verifyErrorForPasswordMismatch</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when password and confirm password do not match</td>
+<td></td>
+<td>3</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: com.xgenplus.tests.LoginTest<br>Test method: Verify login with valid credentials using URL validation</td>
+<td></td>
+<td>27</td>
+<td>com.xgenplus.tests.LoginTest@2a8d39c4</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenCityNameIsBlank()'><b>verifyErrorWhenCityNameIsBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when city name is not provided</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyResetPasswordViaEmail()'><b>verifyResetPasswordViaEmail</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify instruction message when reset password email option is selected</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithoutMobileNumber()'><b>testForgotEmailWithoutMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message when mobile number is not provided</td>
+<td></td>
+<td>0</td>
+<td>com.xgenplus.tests.ForgotEmailTest@7fc6de5b</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithLongMobileNumber()'><b>testForgotEmailWithLongMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for mobile number exceeding 10 digits</td>
+<td></td>
+<td>0</td>
+<td>com.xgenplus.tests.ForgotEmailTest@7fc6de5b</td></tr>
+<tr>
 <td title='com.xgenplus.tests.ForgotEmailTest.testForgotEmailWithInvalidMobileNumber()'><b>testForgotEmailWithInvalidMobileNumber</b><br>Test class: com.xgenplus.tests.ForgotEmailTest<br>Test method: Verify error message for non-existent mobile number</td>
 <td></td>
 <td>1</td>
 <td>com.xgenplus.tests.ForgotEmailTest@7fc6de5b</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifySuccessfulPasswordResetUsingSecurityQuestions()'><b>verifySuccessfulPasswordResetUsingSecurityQuestions</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify successful password reset with valid security answers</td>
+<td></td>
+<td>4</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorForIncorrectSecurityAnswers()'><b>verifyErrorForIncorrectSecurityAnswers</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when incorrect security answers are provided</td>
+<td></td>
+<td>3</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
+<tr>
+<td title='com.xgenplus.tests.ForgotPasswordTest.verifyErrorWhenSecurityAnswersAreBlank()'><b>verifyErrorWhenSecurityAnswersAreBlank</b><br>Test class: com.xgenplus.tests.ForgotPasswordTest<br>Test method: Verify error when security answers are skipped</td>
+<td></td>
+<td>2</td>
+<td>com.xgenplus.tests.ForgotPasswordTest@21baa903</td></tr>
 </table><p>
 </body>
 </html>

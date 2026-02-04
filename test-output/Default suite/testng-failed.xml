@@ -6,7 +6,7 @@
       <class name="com.xgenplus.tests.ComposeMailTest">
         <methods>
           <include name="closeReport"/>
-          <include name="verifySendMailWithAllFields"/>
+          <include name="verifyComposeEmailInSentFolderWithCorrectContent"/>
           <include name="tearDown"/>
           <include name="setupExtent"/>
           <include name="setUp"/>

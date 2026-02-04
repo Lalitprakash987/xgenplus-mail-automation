@@ -284,15 +284,15 @@ public class ComposeMailTest extends BaseClass {
 	}
 
 	@Test(priority = 4, description = "Verify composed email is saved in Draft folder with correct details")
-	public void verifyComposedEmailSavedInDraftFolder() throws InterruptedException {
+	public void verifyComposedEmailSavedInDraftFolder() {
 
 		test = extent.createTest("Compose Mail | Verify Email Saved in Draft Folder",
-				"Check that the composed email is saved in Draft folder with with correct details");
+				"Check that the composed email is saved in Draft folder with correct details");
 
 		log.info("========== Verify Email Saved in Draft Folder ==========");
 
 		loginToMail();
-		// Fetch test data
+
 		String composeToMail = TestDataReader.getData("composeToMail");
 		String composeCcMail = TestDataReader.getData("composeCcMail");
 		String composeBccMail = TestDataReader.getData("composeBccMail");
@@ -300,6 +300,7 @@ public class ComposeMailTest extends BaseClass {
 		String composeBodyText = TestDataReader.getData("composeBodyText");
 		String attachment = TestDataReader.getData("composeAttachment");
 		String inlineImage = TestDataReader.getData("composeInlineImage");
+
 		ComposeMailPage composePage = new ComposeMailPage(driver, wait);
 
 		composePage.clickComposeMailbtn();
@@ -315,27 +316,26 @@ public class ComposeMailTest extends BaseClass {
 		composePage.clickDeliveryReport();
 		composePage.clickReadReceipt();
 		composePage.clickSaveDraft();
+
 		WebElement draftMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("saveDrftTime_0")));
-		String actualDraftMsg = draftMsg.getText().trim();
-		Assert.assertTrue(actualDraftMsg.contains("Draft saved @"), "Draft save message mismatch");
+		Assert.assertTrue(draftMsg.getText().contains("Draft saved"), "Draft save message mismatch");
+
 		test.pass("Draft saved successfully");
+
 		composePage.clickComposeMailClosebtn();
 		composePage.clickDraftText();
-		Thread.sleep(4000);
 		composePage.switchToSentMailListFrame();
-		Thread.sleep(4000);
 		composePage.clickDraftRowId1Text();
-		Thread.sleep(15000);
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("FB");
-		driver.switchTo().frame("FM");
+		composePage.switchToMailFrame();
+
 		Assert.assertEquals(composePage.getDraftToMail(), composeToMail);
 		Assert.assertEquals(composePage.getDraftCcMail(), composeCcMail);
 		Assert.assertEquals(composePage.getDraftBccMail(), composeBccMail);
 		Assert.assertEquals(composePage.getDraftMailSubject(), composeSubject);
 		Assert.assertEquals(composePage.getDraftMailBody(), composeBodyText);
 		Assert.assertTrue(composePage.isDraftInlineImagePresent());
-		test.pass("Draft mail details verified successfully");
 
+		test.pass("Draft mail details verified successfully");
 	}
+
 }

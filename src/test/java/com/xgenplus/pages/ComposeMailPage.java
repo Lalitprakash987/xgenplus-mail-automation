@@ -429,17 +429,23 @@ public class ComposeMailPage {
 
 	public void switchToSentMailListFrame() {
 		driver.switchTo().defaultContent();
-		driver.switchTo().frame("FB");
-		driver.switchTo().frame("FM");
-		driver.switchTo().frame("MC");
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FB"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FM"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("MC"));
 	}
 
 	public void switchToSentMailViewFrame() {
 		driver.switchTo().defaultContent();
-		driver.switchTo().frame("FB");
-		driver.switchTo().frame("FM");
-		driver.switchTo().frame("VC");
-		driver.switchTo().frame("ifViewMail1");
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FB"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FM"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("VC"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("ifViewMail1"));
+	}
+
+	public void switchToMailFrame() {
+		driver.switchTo().defaultContent();
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FB"));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("FM"));
 	}
 
 	// --------Draft Mail Methods --------
