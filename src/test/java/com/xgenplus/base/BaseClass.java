@@ -52,7 +52,7 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 
-	//		options.addArguments("--headless=new");
+			options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
@@ -108,7 +108,7 @@ public class BaseClass {
 		}
 
 		if (driver != null) {
-	//		driver.quit();
+			driver.quit();
 
 		}
 

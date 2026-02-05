@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-02T12:37:50 IST" name="Default suite" finished-at="2026-02-02T12:37:58 IST" duration-ms="7851">
+  <suite started-at="2026-02-05T17:17:31 IST" name="CrossBrowserSuite" finished-at="2026-02-05T17:22:12 IST" duration-ms="281312">
     <groups>
     </groups>
-    <test started-at="2026-02-02T12:37:50 IST" name="Default test" finished-at="2026-02-02T12:37:58 IST" duration-ms="7851">
+    <test started-at="2026-02-05T17:17:31 IST" name="ChromeTest" finished-at="2026-02-05T17:22:12 IST" duration-ms="281312">
       <class name="com.xgenplus.tests.ComposeMailTest">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-02-02T12:37:50 IST" name="setupExtent" finished-at="2026-02-02T12:37:50 IST" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-02-02T12:37:50 IST" name="setUp" finished-at="2026-02-02T12:37:52 IST" duration-ms="1982" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:18:56 IST" name="setUp" finished-at="2026-02-05T17:18:57 IST" duration-ms="1223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,46 +18,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyComposeEmailInSentFolderWithCorrectContent()[pri:3, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-02-02T12:37:52 IST" name="verifyComposeEmailInSentFolderWithCorrectContent" description="Verify composed email is present in Sent folder with correct details" finished-at="2026-02-02T12:37:58 IST" duration-ms="5776" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        <test-method signature="verifyComposeWindowOpens()[pri:1, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:18:57 IST" name="verifyComposeWindowOpens" description="Verify Compose Mail window opens with all mandatory fields and actions" finished-at="2026-02-05T17:19:05 IST" duration-ms="7842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComposeWindowOpens -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:19:05 IST" name="tearDown" finished-at="2026-02-05T17:19:05 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyComposeWindowOpens status=SUCCESS method=ComposeMailTest.verifyComposeWindowOpens()[pri:1, instance:com.xgenplus.tests.ComposeMailTest@607fbe09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:19:05 IST" name="setUp" finished-at="2026-02-05T17:19:06 IST" duration-ms="701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySendMailWithAllFields()[pri:2, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:19:06 IST" name="verifySendMailWithAllFields" description="Verify Send Mail with To, Cc, Bcc, Subject, Body, Attachment and Inline Image" finished-at="2026-02-05T17:20:22 IST" duration-ms="76010" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=144.0.7559.110)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06f11bb8b505c4119b4de6bab6e8a783, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59865}, goog:processID: 8480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59865/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 06f11bb8b505c4119b4de6bab6e8a783]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'toast-message')]'
+(tried for 30 seconds with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=144.0.7559.110)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06f11bb8b505c4119b4de6bab6e8a783, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59865}, goog:processID: 8480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59865/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 06f11bb8b505c4119b4de6bab6e8a783
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1283)
-at org.openqa.selenium.support.ui.ExpectedConditions$28.apply(ExpectedConditions.java:943)
-at org.openqa.selenium.support.ui.ExpectedConditions$28.apply(ExpectedConditions.java:939)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
-at com.xgenplus.pages.LoginPage.handleAlreadyLoggedInPopupIfPresent(LoginPage.java:93)
-at com.xgenplus.pages.LoginPage.login(LoginPage.java:59)
-at com.xgenplus.base.BaseClass.loginToMail(BaseClass.java:132)
-at com.xgenplus.tests.ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent(ComposeMailTest.java:231)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'toast-message')]'
+(tried for 30 seconds with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.xgenplus.pages.ComposeMailPage.getToastMessageAndWaitToDisappear(ComposeMailPage.java:386)
+at com.xgenplus.tests.ComposeMailTest.verifySendMailWithAllFields(ComposeMailTest.java:116)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,38 +85,15 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComposeEmailInSentFolderWithCorrectContent -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-02-02T12:37:58 IST" name="tearDown" finished-at="2026-02-02T12:37:58 IST" duration-ms="63" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyComposeEmailInSentFolderWithCorrectContent status=FAILURE method=ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent()[pri:3, instance:com.xgenplus.tests.ComposeMailTest@665df3c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'toast-message')]"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06f11bb8b505c4119b4de6bab6e8a783, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59865}, goog:processID: 8480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59865/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 06f11bb8b505c4119b4de6bab6e8a783]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06f11bb8b505c4119b4de6bab6e8a783, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59865}, goog:processID: 8480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59865/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 06f11bb8b505c4119b4de6bab6e8a783
+Command: [6ee3e4c44df893b262e22b8979d454dc, findElement {value=//div[contains(@class,'toast-message')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59531}, goog:processID: 7632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59531/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ee3e4c44df893b262e22b8979d454dc
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -129,21 +101,92 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:390)
-at com.xgenplus.base.BaseClass.tearDown(BaseClass.java:99)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendMailWithAllFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:20:22 IST" name="tearDown" finished-at="2026-02-05T17:20:22 IST" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySendMailWithAllFields status=FAILURE method=ComposeMailTest.verifySendMailWithAllFields()[pri:2, instance:com.xgenplus.tests.ComposeMailTest@607fbe09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:20:22 IST" name="setUp" finished-at="2026-02-05T17:20:24 IST" duration-ms="1244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyComposeEmailInSentFolderWithCorrectContent()[pri:3, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:20:24 IST" name="verifyComposeEmailInSentFolderWithCorrectContent" description="Verify composed email is present in Sent folder with correct details" finished-at="2026-02-05T17:20:57 IST" duration-ms="33103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComposeEmailInSentFolderWithCorrectContent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:20:57 IST" name="tearDown" finished-at="2026-02-05T17:20:57 IST" duration-ms="664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyComposeEmailInSentFolderWithCorrectContent status=SUCCESS method=ComposeMailTest.verifyComposeEmailInSentFolderWithCorrectContent()[pri:3, instance:com.xgenplus.tests.ComposeMailTest@607fbe09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:20:57 IST" name="setUp" finished-at="2026-02-05T17:21:00 IST" duration-ms="2735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyComposedEmailSavedInDraftFolder()[pri:4, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:21:00 IST" name="verifyComposedEmailSavedInDraftFolder" description="Verify composed email is saved in Draft folder with correct details" finished-at="2026-02-05T17:22:12 IST" duration-ms="71803" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@aria-label='Editor editing area: main. Press Alt+0 for help.']'
+(tried for 30 seconds with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@aria-label='Editor editing area: main. Press Alt+0 for help.']'
+(tried for 30 seconds with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.xgenplus.pages.ComposeMailPage.waitAndSendKeys(ComposeMailPage.java:166)
+at com.xgenplus.pages.ComposeMailPage.enterBodyText(ComposeMailPage.java:275)
+at com.xgenplus.tests.ComposeMailTest.verifyComposedEmailSavedInDraftFolder(ComposeMailTest.java:313)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -166,17 +209,456 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='Editor editing area: main. Press Alt+0 for help.']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [175cda8759bcd30a116784d64dfe6abf, findElement {value=//div[@aria-label='Editor editing area: main. Press Alt+0 for help.'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55148}, goog:processID: 10092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55148/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 175cda8759bcd30a116784d64dfe6abf
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComposedEmailSavedInDraftFolder -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ComposeMailTest@607fbe09]" started-at="2026-02-05T17:22:12 IST" name="tearDown" finished-at="2026-02-05T17:22:12 IST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyComposedEmailSavedInDraftFolder status=FAILURE method=ComposeMailTest.verifyComposedEmailSavedInDraftFolder()[pri:4, instance:com.xgenplus.tests.ComposeMailTest@607fbe09] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.ComposeMailTest@665df3c6]" started-at="2026-02-02T12:37:58 IST" name="closeReport" finished-at="2026-02-02T12:37:58 IST" duration-ms="295" status="PASS">
+      </class> <!-- com.xgenplus.tests.ComposeMailTest -->
+      <class name="com.xgenplus.tests.LoginTest">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:17:31 IST" name="setupExtent" finished-at="2026-02-05T17:17:31 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:17:31 IST" name="setUp" finished-at="2026-02-05T17:17:33 IST" duration-ms="1962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:1, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:17:33 IST" name="validLoginTest" description="Verify login with valid credentials using URL validation" finished-at="2026-02-05T17:18:04 IST" duration-ms="31119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:04 IST" name="tearDown" finished-at="2026-02-05T17:18:04 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:1, instance:com.xgenplus.tests.LoginTest@2a8d39c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:04 IST" name="setUp" finished-at="2026-02-05T17:18:05 IST" duration-ms="711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidEmailLoginTest()[pri:2, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:05 IST" name="invalidEmailLoginTest" description="Verify login with invalid email" finished-at="2026-02-05T17:18:06 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:06 IST" name="tearDown" finished-at="2026-02-05T17:18:06 IST" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidEmailLoginTest status=SUCCESS method=LoginTest.invalidEmailLoginTest()[pri:2, instance:com.xgenplus.tests.LoginTest@2a8d39c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:06 IST" name="setUp" finished-at="2026-02-05T17:18:06 IST" duration-ms="717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPasswordLoginTest()[pri:3, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:06 IST" name="invalidPasswordLoginTest" description="Verify login with valid email with invaild password" finished-at="2026-02-05T17:18:09 IST" duration-ms="2999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:18:09 IST" name="tearDown" finished-at="2026-02-05T17:18:10 IST" duration-ms="123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidPasswordLoginTest status=SUCCESS method=LoginTest.invalidPasswordLoginTest()[pri:3, instance:com.xgenplus.tests.LoginTest@2a8d39c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.xgenplus.tests.LoginTest@2a8d39c4]" started-at="2026-02-05T17:22:12 IST" name="closeReport" finished-at="2026-02-05T17:22:12 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
-      </class> <!-- com.xgenplus.tests.ComposeMailTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.xgenplus.tests.LoginTest -->
+      <class name="com.xgenplus.tests.ForgotPasswordTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:20 IST" name="setUp" finished-at="2026-02-05T17:18:21 IST" duration-ms="1230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyResetPasswordViaEmail()[pri:1, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:21 IST" name="verifyResetPasswordViaEmail" description="Verify instruction message when reset password email option is selected" finished-at="2026-02-05T17:18:24 IST" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPasswordViaEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:24 IST" name="tearDown" finished-at="2026-02-05T17:18:24 IST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetPasswordViaEmail status=SUCCESS method=ForgotPasswordTest.verifyResetPasswordViaEmail()[pri:1, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:24 IST" name="setUp" finished-at="2026-02-05T17:18:25 IST" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySuccessfulPasswordResetUsingSecurityQuestions()[pri:2, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:25 IST" name="verifySuccessfulPasswordResetUsingSecurityQuestions" description="Verify successful password reset with valid security answers" finished-at="2026-02-05T17:18:29 IST" duration-ms="3984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulPasswordResetUsingSecurityQuestions -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:29 IST" name="tearDown" finished-at="2026-02-05T17:18:29 IST" duration-ms="163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulPasswordResetUsingSecurityQuestions status=SUCCESS method=ForgotPasswordTest.verifySuccessfulPasswordResetUsingSecurityQuestions()[pri:2, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:29 IST" name="setUp" finished-at="2026-02-05T17:18:30 IST" duration-ms="691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorWhenPasswordIsMissing()[pri:3, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:30 IST" name="verifyErrorWhenPasswordIsMissing" description="Verify error when password is not entered" finished-at="2026-02-05T17:18:33 IST" duration-ms="3196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorWhenPasswordIsMissing -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:33 IST" name="tearDown" finished-at="2026-02-05T17:18:33 IST" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorWhenPasswordIsMissing status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenPasswordIsMissing()[pri:3, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:33 IST" name="setUp" finished-at="2026-02-05T17:18:35 IST" duration-ms="1996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorForPasswordMismatch()[pri:4, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:35 IST" name="verifyErrorForPasswordMismatch" description="Verify error when password and confirm password do not match" finished-at="2026-02-05T17:18:39 IST" duration-ms="3455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorForPasswordMismatch -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:39 IST" name="tearDown" finished-at="2026-02-05T17:18:39 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorForPasswordMismatch status=SUCCESS method=ForgotPasswordTest.verifyErrorForPasswordMismatch()[pri:4, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:39 IST" name="setUp" finished-at="2026-02-05T17:18:40 IST" duration-ms="1240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorWhenSecurityAnswersAreBlank()[pri:5, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:40 IST" name="verifyErrorWhenSecurityAnswersAreBlank" description="Verify error when security answers are skipped" finished-at="2026-02-05T17:18:42 IST" duration-ms="2179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorWhenSecurityAnswersAreBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:42 IST" name="tearDown" finished-at="2026-02-05T17:18:43 IST" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorWhenSecurityAnswersAreBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenSecurityAnswersAreBlank()[pri:5, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:43 IST" name="setUp" finished-at="2026-02-05T17:18:43 IST" duration-ms="688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorWhenCityNameIsBlank()[pri:6, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:43 IST" name="verifyErrorWhenCityNameIsBlank" description="Verify error when city name is not provided" finished-at="2026-02-05T17:18:46 IST" duration-ms="2987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorWhenCityNameIsBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:46 IST" name="tearDown" finished-at="2026-02-05T17:18:46 IST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorWhenCityNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenCityNameIsBlank()[pri:6, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:46 IST" name="setUp" finished-at="2026-02-05T17:18:48 IST" duration-ms="1947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorWhenCountryNameIsBlank()[pri:7, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:48 IST" name="verifyErrorWhenCountryNameIsBlank" description="Verify error when country name is not provided" finished-at="2026-02-05T17:18:51 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorWhenCountryNameIsBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:51 IST" name="tearDown" finished-at="2026-02-05T17:18:51 IST" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorWhenCountryNameIsBlank status=SUCCESS method=ForgotPasswordTest.verifyErrorWhenCountryNameIsBlank()[pri:7, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:51 IST" name="setUp" finished-at="2026-02-05T17:18:52 IST" duration-ms="1145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorForIncorrectSecurityAnswers()[pri:8, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:52 IST" name="verifyErrorForIncorrectSecurityAnswers" description="Verify error when incorrect security answers are provided" finished-at="2026-02-05T17:18:56 IST" duration-ms="3198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorForIncorrectSecurityAnswers -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903]" started-at="2026-02-05T17:18:56 IST" name="tearDown" finished-at="2026-02-05T17:18:56 IST" duration-ms="365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorForIncorrectSecurityAnswers status=SUCCESS method=ForgotPasswordTest.verifyErrorForIncorrectSecurityAnswers()[pri:8, instance:com.xgenplus.tests.ForgotPasswordTest@21baa903] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xgenplus.tests.ForgotPasswordTest -->
+      <class name="com.xgenplus.tests.ForgotEmailTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:10 IST" name="setUp" finished-at="2026-02-05T17:18:11 IST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotEmailWithoutMobileNumber()[pri:4, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:11 IST" name="testForgotEmailWithoutMobileNumber" description="Verify error message when mobile number is not provided" finished-at="2026-02-05T17:18:12 IST" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotEmailWithoutMobileNumber -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:12 IST" name="tearDown" finished-at="2026-02-05T17:18:12 IST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotEmailWithoutMobileNumber status=SUCCESS method=ForgotEmailTest.testForgotEmailWithoutMobileNumber()[pri:4, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:12 IST" name="setUp" finished-at="2026-02-05T17:18:13 IST" duration-ms="1187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotEmailWithInvalidMobileNumber()[pri:5, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:13 IST" name="testForgotEmailWithInvalidMobileNumber" description="Verify error message for non-existent mobile number" finished-at="2026-02-05T17:18:14 IST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotEmailWithInvalidMobileNumber -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:14 IST" name="tearDown" finished-at="2026-02-05T17:18:14 IST" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotEmailWithInvalidMobileNumber status=SUCCESS method=ForgotEmailTest.testForgotEmailWithInvalidMobileNumber()[pri:5, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:14 IST" name="setUp" finished-at="2026-02-05T17:18:15 IST" duration-ms="712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotEmailWithLongMobileNumber()[pri:6, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:15 IST" name="testForgotEmailWithLongMobileNumber" description="Verify error message for mobile number exceeding 10 digits" finished-at="2026-02-05T17:18:16 IST" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotEmailWithLongMobileNumber -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:16 IST" name="tearDown" finished-at="2026-02-05T17:18:16 IST" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotEmailWithLongMobileNumber status=SUCCESS method=ForgotEmailTest.testForgotEmailWithLongMobileNumber()[pri:6, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:16 IST" name="setUp" finished-at="2026-02-05T17:18:19 IST" duration-ms="2687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotEmailWithAlphabetsInMobile()[pri:7, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:19 IST" name="testForgotEmailWithAlphabetsInMobile" description="Verify error message for mobile number containing alphabets" finished-at="2026-02-05T17:18:20 IST" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotEmailWithAlphabetsInMobile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b]" started-at="2026-02-05T17:18:20 IST" name="tearDown" finished-at="2026-02-05T17:18:20 IST" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testForgotEmailWithAlphabetsInMobile status=SUCCESS method=ForgotEmailTest.testForgotEmailWithAlphabetsInMobile()[pri:7, instance:com.xgenplus.tests.ForgotEmailTest@7fc6de5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xgenplus.tests.ForgotEmailTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- CrossBrowserSuite -->
 </testng-results>

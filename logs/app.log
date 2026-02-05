@@ -1,4 +1,108 @@
-[2026-02-03 17:37:46] INFO  LoginTest:24 - ========== Login Test Started ==========
-[2026-02-03 17:37:46] INFO  LoginTest:36 - Switching to login frame
-[2026-02-03 17:37:46] INFO  LoginTest:41 - Performing login using valid credentials
-[2026-02-03 17:37:52] INFO  LoginTest:46 - Handling post-login frames and guided tour if present
+[2026-02-05 17:17:33] INFO  LoginTest:24 - ========== Login Test Started ==========
+[2026-02-05 17:17:33] INFO  LoginTest:36 - Switching to login frame
+[2026-02-05 17:17:33] INFO  LoginTest:41 - Performing login using valid credentials
+[2026-02-05 17:17:34] INFO  LoginTest:46 - Handling post-login frames and guided tour if present
+[2026-02-05 17:18:04] INFO  LoginTest:52 - Waiting for inbox URL to be loaded
+[2026-02-05 17:18:04] INFO  LoginTest:60 - Login successful. User redirected to: https://mail.dil.net.in/TyHtmMain.jsp
+[2026-02-05 17:18:05] INFO  LoginTest:69 - ========== Invalid Email Login Test Started ==========
+[2026-02-05 17:18:05] INFO  LoginTest:80 - Switching to login frame
+[2026-02-05 17:18:05] INFO  LoginTest:85 - Entering invalid email and clicking Next
+[2026-02-05 17:18:06] INFO  LoginTest:91 - Verifying error message for invalid email
+[2026-02-05 17:18:06] INFO  LoginTest:102 - Invalid email login test passed
+[2026-02-05 17:18:06] INFO  LoginTest:111 - ========== Invalid Password Login Test Started ==========
+[2026-02-05 17:18:06] INFO  LoginTest:123 - Switching to login frame
+[2026-02-05 17:18:08] INFO  LoginTest:128 - Entering valid email and clicking Next
+[2026-02-05 17:18:09] INFO  LoginTest:143 - Invalid password login test passed
+[2026-02-05 17:18:11] INFO  ForgotEmailTest:24 - ========== Forgot Email Test Started: No Mobile Number ==========
+[2026-02-05 17:18:11] INFO  ForgotEmailTest:30 - Switching to top frame for Forgot Email page
+[2026-02-05 17:18:11] INFO  ForgotEmailTest:35 - Clicking on 'Forgot Password' link
+[2026-02-05 17:18:11] INFO  ForgotEmailTest:40 - Clicking Next without entering mobile number
+[2026-02-05 17:18:12] INFO  ForgotEmailTest:45 - Verifying error message for empty mobile number
+[2026-02-05 17:18:12] INFO  ForgotEmailTest:54 - Test passed: Correct error message displayed for empty mobile number
+[2026-02-05 17:18:13] INFO  ForgotEmailTest:63 - ========== Forgot Email Test Started: Invalid Mobile Number ==========
+[2026-02-05 17:18:13] INFO  ForgotEmailTest:70 - Switching to top frame for Forgot Email page
+[2026-02-05 17:18:13] INFO  ForgotEmailTest:75 - Clicking on 'Forgot Password' link
+[2026-02-05 17:18:13] INFO  ForgotEmailTest:84 - Entering invalid mobile number: 8769276921
+[2026-02-05 17:18:14] INFO  ForgotEmailTest:89 - Clicking Next button
+[2026-02-05 17:18:14] INFO  ForgotEmailTest:94 - Verifying error message 'Mobile Number not Exists!'
+[2026-02-05 17:18:14] INFO  ForgotEmailTest:103 - Test passed: Correct error message displayed for non-existent mobile number
+[2026-02-05 17:18:15] INFO  ForgotEmailTest:112 - ========== Forgot Email Test Started: Mobile Number Too Long ==========
+[2026-02-05 17:18:15] INFO  ForgotEmailTest:123 - Entering long mobile number: 876927692126
+[2026-02-05 17:18:15] INFO  ForgotEmailTest:127 - Clicking Next button
+[2026-02-05 17:18:16] INFO  ForgotEmailTest:131 - Verifying error message 'Please put 10 digit mobile number'
+[2026-02-05 17:18:16] INFO  ForgotEmailTest:140 - Test passed: Correct error message displayed for mobile number exceeding 10 digits
+[2026-02-05 17:18:19] INFO  ForgotEmailTest:149 - ========== Forgot Email Test Started: Mobile Number With Alphabets ==========
+[2026-02-05 17:18:19] INFO  ForgotEmailTest:160 - Entering mobile number with alphabets: 98765abcde
+[2026-02-05 17:18:19] INFO  ForgotEmailTest:164 - Clicking Next button
+[2026-02-05 17:18:20] INFO  ForgotEmailTest:168 - Verifying error message 'Not a valid number'
+[2026-02-05 17:18:20] INFO  ForgotEmailTest:177 - Test passed: Correct error message displayed for mobile number with alphabets
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:25 - ========== TEST STARTED : Reset Password Instruction ==========
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:29 - ForgotPasswordPage initialized
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:31 - Switching to top frame
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:35 - Entering registered email
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:39 - Clicking Next button
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:43 - Clicking Forgot Password link
+[2026-02-05 17:18:21] INFO  ForgotPasswordTest:47 - Proceeding with reset password option
+[2026-02-05 17:18:22] INFO  ForgotPasswordTest:51 - Selecting Send Password Email option
+[2026-02-05 17:18:24] INFO  ForgotPasswordTest:64 - VerifyResetPasswordViaEmail
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:74 - ========== TEST STARTED : Successful Password Reset ==========
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:78 - ForgotPasswordPage initialized
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:80 - Switching to top frame
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:84 - Entering registered email
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:88 - Clicking Next button
+[2026-02-05 17:18:25] INFO  ForgotPasswordTest:92 - Navigating to Forgot Password flow
+[2026-02-05 17:18:26] INFO  ForgotPasswordTest:96 - Proceeding to reset options
+[2026-02-05 17:18:26] INFO  ForgotPasswordTest:100 - Selecting security question verification
+[2026-02-05 17:18:27] INFO  ForgotPasswordTest:104 - Entering valid security answers
+[2026-02-05 17:18:27] INFO  ForgotPasswordTest:110 - Submitting security answers
+[2026-02-05 17:18:28] INFO  ForgotPasswordTest:114 - Entering new password
+[2026-02-05 17:18:28] INFO  ForgotPasswordTest:119 - Submitting password change request
+[2026-02-05 17:18:28] INFO  ForgotPasswordTest:123 - Validating success message
+[2026-02-05 17:18:29] INFO  ForgotPasswordTest:134 - Password reset completed successfully
+[2026-02-05 17:18:30] INFO  ForgotPasswordTest:144 - ========== TEST STARTED : Missing Password Validation ==========
+[2026-02-05 17:18:30] INFO  ForgotPasswordTest:149 - Switching to top frame
+[2026-02-05 17:18:30] INFO  ForgotPasswordTest:153 - Completing security verification
+[2026-02-05 17:18:33] INFO  ForgotPasswordTest:165 - Submitting empty password fields
+[2026-02-05 17:18:33] INFO  ForgotPasswordTest:178 - Password mandatory validation verified
+[2026-02-05 17:18:35] INFO  ForgotPasswordTest:188 - ========== TEST STARTED : Password Mismatch Validation ==========
+[2026-02-05 17:18:35] INFO  ForgotPasswordTest:193 - Switching to top frame
+[2026-02-05 17:18:35] INFO  ForgotPasswordTest:197 - Navigating to password reset using security questions
+[2026-02-05 17:18:38] INFO  ForgotPasswordTest:209 - Entering mismatched passwords
+[2026-02-05 17:18:39] INFO  ForgotPasswordTest:225 - Password mismatch validation verified successfully
+[2026-02-05 17:18:40] INFO  ForgotPasswordTest:235 - ========== TEST STARTED : Blank Security Answers ==========
+[2026-02-05 17:18:40] INFO  ForgotPasswordTest:240 - Switching to top frame
+[2026-02-05 17:18:40] INFO  ForgotPasswordTest:244 - Navigating to security verification without answers
+[2026-02-05 17:18:42] INFO  ForgotPasswordTest:261 - Security answer blank validation verified
+[2026-02-05 17:18:43] INFO  ForgotPasswordTest:271 - ========== TEST STARTED : Blank City Validation ==========
+[2026-02-05 17:18:43] INFO  ForgotPasswordTest:276 - Switching to top frame
+[2026-02-05 17:18:44] INFO  ForgotPasswordTest:279 - Submitting security answers with missing city
+[2026-02-05 17:18:46] INFO  ForgotPasswordTest:298 - City blank validation verified
+[2026-02-05 17:18:48] INFO  ForgotPasswordTest:308 - ========== TEST STARTED : Blank Country Validation ==========
+[2026-02-05 17:18:48] INFO  ForgotPasswordTest:313 - Switching to top frame
+[2026-02-05 17:18:49] INFO  ForgotPasswordTest:317 - Submitting security answers with missing country
+[2026-02-05 17:18:51] INFO  ForgotPasswordTest:336 - Country blank validation verified
+[2026-02-05 17:18:52] INFO  ForgotPasswordTest:346 - ========== TEST STARTED : Incorrect Security Answers ==========
+[2026-02-05 17:18:52] INFO  ForgotPasswordTest:351 - Switching to top frame
+[2026-02-05 17:18:53] INFO  ForgotPasswordTest:355 - Submitting incorrect security answers
+[2026-02-05 17:18:56] INFO  ForgotPasswordTest:375 - Incorrect security answers validation verified
+[2026-02-05 17:18:57] INFO  ComposeMailTest:32 - ========== Compose Window UI Verification Started ==========
+[2026-02-05 17:19:02] INFO  ComposeMailTest:39 - Clicking Compose Mail button
+[2026-02-05 17:19:03] INFO  ComposeMailTest:43 - Verifying all fields and buttons in Compose Mail window
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'To' field is visible
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'Subject' field is visible
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'Body' field is visible
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'Cc' button is visible
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'Bcc' button is visible
+[2026-02-05 17:19:04] INFO  ComposeMailTest:69 - 'Send' button is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Formatting option' is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Attachment' button is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Inline Image' button is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Delivery Report' option is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Read Receipt' option is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:69 - 'Save Draft' button is visible
+[2026-02-05 17:19:05] INFO  ComposeMailTest:61 - All Compose Mail fields and buttons verified
+[2026-02-05 17:19:06] INFO  ComposeMailTest:89 - ========== Send Mail Test Started ==========
+[2026-02-05 17:19:40] INFO  ComposeMailTest:110 - Step 1: Attempt to send email with blank 'To' field
+[2026-02-05 17:20:24] INFO  ComposeMailTest:229 - ========== Verify Email in Sent Folder Started ==========
+[2026-02-05 17:20:57] INFO  ComposeMailTest:282 - ========== Verify Email in Sent Folder Completed Successfully ==========
+[2026-02-05 17:21:00] INFO  ComposeMailTest:292 - ========== Verify Email Saved in Draft Folder ==========
